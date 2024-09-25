@@ -12,11 +12,14 @@
 header, footer {
     background-color: var(--background-color);
     display: grid;
-    align-items: center;    
-    font-size: 2rem;
+    align-items: center;   
     font-family: var(--heading-font);
     color: var(--secondary-color);
     border-radius: 5px;
+}
+
+header {
+    font-size: 2rem;
 }
 
 h1 {
@@ -52,6 +55,32 @@ nav a:hover {
     text-decoration: underline overline var(--accent2-color);   
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-family: var(--paragraph-font);
+    padding-left: 2rem;
+    text-align: center;
+}
+
+section {
+    margin: 30px;
+    background-color: var(--accent1-color);
+}
+
+.certificate {
+    grid-column: 1/3;    
+}
+
+footer {
+    font-size: 1rem;
+    text-align: center;
+}
 
 
 
