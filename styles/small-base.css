@@ -1,6 +1,15 @@
 @media screen and (max-width: 800px) {
+    header {
+        grid-template-rows: 1fr;
+    }
+
     header img {
-        max-width: 8rem;        
+        max-width: 8rem;
+        grid-row: 1/2;        
+    }
+
+    h1 {
+        grid-row: 1/2;
     }
     
     main {
@@ -11,9 +20,36 @@
         grid-column: 1/2;
     }
 
-    nav a {
-        display: none;
+    .navigation.open {
+        display: flex;
+        flex-direction: column;
+        grid-row: 1/2;
+        z-index: 2;
+        background-color: var(--background-color);
     }
+
+    .navigation a {
+        display: none;        
+    }
+
+    .open a {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        font-size: 2rem;
+        z-index: 3;
+    }
+
+    #menu::before {
+        content: '☰';
+    }
+    
+    #menu.open::before {
+        content: 'X'
+    }
+
 }
 
 @media screen and (max-width: 515px) {
@@ -23,11 +59,13 @@
 
     header img {
         max-width: 5rem;
+        grid-column: 1/2;
     }
 
     h1 {
         justify-self: center;
         margin: 20px 0px;
+        grid-column: 1/2;
     }
 
     nav {

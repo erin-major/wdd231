@@ -1,5 +1,8 @@
 const currentYear = document.querySelector('#currentyear');
 const lastModified = document.querySelector('#lastModified');
+const menu = document.querySelector('#menu');
+const nav = document.querySelector('.navigation');
+const navLinks = document.querySelectorAll('nav a');
 
 const today = new Date();
 
@@ -12,8 +15,22 @@ let todayFormatted = today.toLocaleDateString('en-us', {
 currentYear.innerHTML = `©️ ${today.getFullYear()} | Erin Major | Utah, USA`;
 lastModified.innerHTML = `Last Modified: ${todayFormatted}`;
 
+const currentPath = window.location.pathname.split('/').pop();
 
+navLinks.forEach(link => {
+    const linkPath = link.getAttribute('href');
 
+    if (linkPath === currentPath) {
+        link.classList.add('active');
+    } else {
+        link.classList.remove('active');
+    }
+});
+
+menu.addEventListener('click', () => {
+    menu.classList.toggle("open");
+    nav.classList.toggle("open");
+});
 
 const courses = [
     {

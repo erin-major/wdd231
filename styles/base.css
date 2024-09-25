@@ -24,6 +24,7 @@ header {
 
 h1 {
     justify-self: left;
+    grid-column: 2/3;
 }
 
 header img {
@@ -31,6 +32,20 @@ header img {
     margin: 10px;    
     box-shadow: var(--primary-color) 0px 8px 24px;
     justify-self: center;
+    grid-column: 1/2;
+}
+
+#menu {
+    display: none;
+    background: none;
+    border: 0;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.active {
+    text-decoration: underline overline var(--primary-color); 
 }
 
 nav {
