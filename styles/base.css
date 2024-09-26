@@ -45,7 +45,8 @@ nav {
 nav a {
     flex: 1 1 auto;
     text-align: center;
-    text-decoration: none;       
+    text-decoration: none;
+    color: var(--secondary-color);       
 }
 
 nav a:visited{
@@ -66,8 +67,20 @@ nav a:hover {
     right: 1.5rem;
 }
 
+.location p {
+    font-size: 1.2rem;
+}
+
 .active {
     text-decoration: underline overline var(--primary-color); 
+}
+
+ul {
+    padding-bottom: 14.5rem;
+}
+
+li {
+    margin-left: 2rem;
 }
 
 .certificate {
@@ -129,8 +142,7 @@ main {
 }
 
 h2 {
-    font-family: var(--paragraph-font);
-    padding-left: 2rem;    
+    font-family: var(--paragraph-font);      
 }
 
 section {
