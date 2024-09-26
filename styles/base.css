@@ -30,9 +30,12 @@ h1 {
 header img {
     max-width: 10rem;
     margin: 10px;    
-    box-shadow: var(--primary-color) 0px 8px 24px;
     justify-self: center;
     grid-column: 1/2;
+}
+
+img {
+    box-shadow: var(--primary-color) 0px 8px 24px;
 }
 
 nav {
