@@ -3,6 +3,9 @@ const lastModified = document.querySelector('#lastModified');
 const menu = document.querySelector('#menu');
 const nav = document.querySelector('.navigation');
 const navLinks = document.querySelectorAll('nav a');
+const all = document.querySelector('#all');
+const cse = document.querySelector('#cse');
+const wdd = document.querySelector('#wdd');
 
 const today = new Date();
 
@@ -110,4 +113,57 @@ const courses = [
         ],
         completed: false
     }
-]
+];
+
+function displayCourses(filteredCourses) {
+    document.querySelector('#courses').innerHTML = "";
+    const html = filteredCourses.map(
+        (course) => ` <figure id="course-${course.number}">
+            <p>${course.subject} ${course.number}</p>
+            </figure>`
+    );
+    document.querySelector('#courses').innerHTML = html.join("");
+    changeCourseColor(filteredCourses);
+    let remainingCredits = calculateRequired(filteredCourses);
+    document.querySelector('#remainingCredits').innerHTML = `You have ${remainingCredits} of these credits left before you earn your certificate!`;
+};
+
+function changeCourseColor(filteredCourses) {
+    filteredCourses.forEach(course => {
+        if(course.completed == true) {
+            document.querySelector(`#course-${course.number}`).classList.toggle("completed");
+        };
+    });
+};
+
+function calculateRequired(filteredCourses) {
+    return filteredCourses.reduce((accumaltor, course) => {
+        if(course.completed == false) {
+            return accumaltor + course.credits;
+        }
+        return accumaltor;  
+    }, 0);
+};
+
+displayCourses(courses);
+
+all.addEventListener('click', () => {
+    displayCourses(courses);
+    all.classList.add('selected');
+    cse.classList.remove('selected');
+    wdd.classList.remove('selected');
+});
+
+cse.addEventListener('click', () => {
+    displayCourses(courses.filter(course => course.subject == "CSE"));
+    cse.classList.add('selected');
+    all.classList.remove('selected');
+    wdd.classList.remove('selected');
+});
+
+wdd.addEventListener('click', () => {
+    displayCourses(courses.filter(course => course.subject == "WDD"));
+    wdd.classList.add('selected');
+    cse.classList.remove('selected');
+    all.classList.remove('selected');
+});
