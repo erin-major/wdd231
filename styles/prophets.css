@@ -61,15 +61,14 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: .5rem;
     padding: .5rem;
-    margin-top: 2rem;    
+    margin-top: 2rem;
 }
 
 section {
     display: flex;    
     background-color: var(--primary-color);
     width: auto; 
-    max-width: 354px;  
-    justify-content: center;
+    max-width: 354px;   
     padding-bottom: 1rem;
     border: 2px solid var(--accent2-color);
     border-radius: 5px;    
