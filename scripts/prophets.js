@@ -60,7 +60,16 @@ function getOrdinal(n) {
     }
   
     return ord;
-  }
+};
+
+function getAgeAtDeathInYears(birthdate, deathdate) {
+	let birth = new Date(birthdate);
+	let death = new Date(deathdate);
+	if (deathdate === null) {
+		death = new Date();
+	}
+	return Math.floor((death - birth) / (365 * 24 * 60 * 60 * 1000));
+}
 
 (async () => {
     prophets = await getProphetData();
@@ -98,17 +107,7 @@ outsideUsBorn.addEventListener('click', () => {
 });
 
 livedLong.addEventListener('click', () => {
-    displayProphets(prophets.filter(prophet => {
-        let deathYear = prophet.death ? parseInt(prophet.death.slice(-4)): null;
-        let birthYear = prophet.birthdate ? parseInt(prophet.birthdate.slice(-4)): null;
-        
-        if (deathYear && birthYear){
-            let age = deathYear - birthYear;
-            return age >= 95;
-        }
-        return true;
-    }));
-
+    displayProphets(prophets.filter(prophet => getAgeAtDeathInYears(prophet.birthdate, prophet.death) >= 95));
     livedLong.classList.add('active');
     all.classList.remove('active');
     utahBorn.classList.remove('active');
