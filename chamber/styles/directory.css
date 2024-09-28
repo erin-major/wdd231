@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #ffc848;
+    --font-color: #011502;
+    --background-color: #F7F3E3;
+    --accent1-color: #C32F27;
+    --accent2-color: #485696;
+
+    --heading-font: 'Cinzel', serif;
+    --paragraph-font: 'Gowun Batang', serif;
+}
+
+
+h1, h2, h3, header span {
+    font-family: var(--heading-font);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: auto auto;
+    background-color: var(--background-color);
+    transition: padding 0.5s ease-in-out;
+    min-width: 285px;
+}
+
+header picture, header button {
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+}
+
+h1 {
+    grid-row: 1/2;
+    margin: 0px;
+    padding: 10px 0px 0px 10px;
+}
+
+header span {
+    grid-row: 2/3;
+    font-size: .8rem;
+    padding: 0px 0px 10px 10px;
+    transition: font-size 0.5s ease-out; 
+}
+
+#menu {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--font-color);
+    cursor: pointer;
+    font-weight: bolder;
+    text-align: right;
+    width: 100%;
+    padding: .5rem 3vw;
+}
+
+nav {
+    background-color: var(--primary-color);
+    font-family: var(--heading-font);
+    font-weight: 600;
+}
+
+ul.menuLinks li a {      
+    display: block;
+    text-decoration: none;
+    padding: .5rem 3vw;
+    font-size: 1.5rem;
+    color: var(--font-color);
+}
+
+li.active a {
+    background-color: rgba(0,0,0,0.1);
+}
+
+ul.menuLinks {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu::before {
+    content: "\2630";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}

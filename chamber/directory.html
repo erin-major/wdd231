@@ -7,6 +7,10 @@
     <meta name="description" content="A webpage for the chamber of commerce for the city of Ul'dah.">
     <meta name="author" content="Erin Major">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+    <script src="scripts/directory.js" defer></script>
     <meta property="og:title" content="Ul'dah Chamber of Commerce">
     <meta property="og:type" content="article" />
     <meta property="og:image" content="images/uldah-night.jpg">
@@ -14,9 +18,67 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:description" content="A webpage for the chamber of commerce for the city of Ul'dah.">
     <meta property="og:site_name" content="Ul'dah Chamber of Commerce">
-    <meta name="twitter:image:alt" content="The streets of Ul-dah at night with lights.">    
+    <meta name="twitter:image:alt" content="The streets of Ul'dah at night with lights.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">    
 </head>
 <body>
-    
+    <header>
+        <picture>
+            <source srcset="images/flames-crest.webp" media="(min-width: 40rem)">
+            <img src="images/flames-crest-small.webp" 
+            alt="A scale with a diamond on the left and fire on the right.">
+        </picture> 
+        <h1>Ul'dah</h1>
+        <span>Chamber of Commerce</span>
+        <button id="menu" title="menu"></button>       
+    </header>
+    <nav id="animation">
+        <ul class="menuLinks">
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="">Join</a></li>
+            <li><a href="">Discover</a></li>
+            <!-- <img src="" alt=""> -->
+        </ul>
+    </nav>
+    <body>
+            <picture class="hero"></picture>
+            <section class="home">
+                <h2>Home</h2>
+                <section class="events">
+                    <h3>Events</h3>
+                    <table></table>
+                </section>
+                <section class="weather">
+                    <h3>Current Weather</h3>
+                    <table></table>
+                </section>
+                <section class="forecast">
+                    <h3>Weather Forecast</h3>
+                    <table></table>
+                </section>
+            </section>
+            <section class="cards">
+            </section>
+    </body>
+    <footer>
+        <section class="contactInfo">
+            <span>Ul'dah Chamber of Commerce</span>
+            <span>5 The Gold Court</span>
+            <span>Steps of Thal, Ul'dah 23646</span>
+            <span>info@uldahchamber.org</span>
+            <span>801-319-3160</p>
+        </section>
+        <section class="socials">
+        </section>
+        <section class="authorInfo">
+            <span>WDD231 Class Project</span>
+            <span>Erin Major</span>
+            <span id="currentyear"></span>
+            <span id="lastModified"></span>
+        </section>
+    </footer>
 </body>
 </html>
