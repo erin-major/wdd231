@@ -52,6 +52,7 @@ p {
 
 .active {
     background-color: var(--accent1-color);
+    color: whitesmoke;
 }
 
 
