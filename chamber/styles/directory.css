@@ -10,7 +10,7 @@
 }
 
 
-h1, h2, h3, header span {
+h1, h2, header span {
     font-family: var(--heading-font);
 }
 
