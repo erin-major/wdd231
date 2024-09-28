@@ -1,0 +1,25 @@
+[
+    {
+        "familyName": null,
+        "moveInDate": null,
+        "numberOfRecords": null,
+        "visited": false,
+        "familyMembers": [
+            {
+                "name": null,
+                "gender": null,
+                "birthdate": null
+            },
+            {
+                "name": null,
+                "gender": null,
+                "birthdate": null
+            },
+            {
+                "name": null,
+                "gender": null,
+                "birthdate": null
+            }
+        ]
+    }
+]

@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #258EA6;
+    --secondary-color: #333533;
+    --background-color: #B5B1B2;
+    --accent1-color: #73628A;
+    --accent2-color: #242423;
+
+    --heading-font: 'Noto Serif Old Uyghur', serif;
+    --paragraph-font: 'Kay Pho Du', serif;
+}
+
+header, main, footer {
+    background-color: var(--background-color);
+}
+
+h1 {
+    margin: 0;
+    padding: 1rem 0rem 3rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+footer p {
+    text-align: center;
+    padding: 3rem 0rem 1rem;
+    font-size: 1.5rem;    
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    margin: 0;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.filters p {
+    font-size: 1rem;
+    padding: 1rem;
+    border: 2px solid var(--accent2-color);    
+    border-radius: 5px;
+    margin-bottom: .5rem;
+}
+
+.active {
+    background-color: var(--accent1-color);
+}
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: .5rem;
+    padding: .5rem;
+    margin-top: 2rem;    
+}
+
+section {
+    display: flex;    
+    background-color: var(--primary-color);
+    width: auto; 
+    max-width: 354px;  
+    justify-content: center;
+    padding-bottom: 1rem;
+    border: 2px solid var(--accent2-color);
+    border-radius: 5px;    
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 30px 5px var(--secondary-color);
+}
+
+img {
+    box-shadow: 0 0 30px 5px var(--secondary-color);
+    width: auto;
+    max-width: 200px;
+    height: auto;
+    margin-top: 1rem; 
+}
