@@ -180,7 +180,7 @@ th, tr:nth-child(even) {
 }
 
 footer {
-    gap: 1rem;
+    gap: 2rem;
     padding: 1rem;
     border-top: 5px solid var(--accent1-color);
 }
