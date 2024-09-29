@@ -34,6 +34,22 @@
     .contactInfo {
         min-width: 190px;
     }
+
+    #cards {
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+        margin: 2rem 1rem;
+    }
+
+    #cards section {
+        font-size: 1.2rem; 
+    }
+
+    .filters {
+        position: absolute;
+        top: -.6rem;
+        right: 2rem;
+        font-size: 3rem;
+    }
 }
 
 @media screen and (min-width: 23rem) {

@@ -9,10 +9,9 @@
     --paragraph-font: 'Gowun Batang', serif;
 }
 
-/* * {
-    max-width: 2000px;
-    margin: 0 auto;
-} */
+body {
+    background-color: var(--background-color);;
+}
 
 h1, h2, header span {
     font-family: var(--heading-font);
@@ -94,7 +93,7 @@ ul.menuLinks {
 }
 
 #menu.open::before {
-    content: "X";
+    content: "\2613";
 }
 
 nav {
@@ -111,43 +110,52 @@ nav.open {
     grid-template-rows: 1fr;
 }
 
-#cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: .5rem;
-    padding: .5rem;
-    margin-top: 2rem;
+main {
+    position: relative;
 }
 
-.cards section {
+.filters {
+    padding-left: 2rem;
+    font-size: 3rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    gap: .5rem;
+    padding: .5rem;
+    margin: 1rem 1rem;
+}
+
+#cards section {
     display: flex;    
     background-color: var(--primary-color);
-    width: auto; 
-    max-width: 354px;   
+    width: auto;   
     padding-bottom: 1rem;
     border: 2px solid var(--accent2-color);
     border-radius: 5px;    
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 0 30px 5px var(--secondary-color);
+    box-shadow: 0 0 10px 1px var(--primary-color);
+    font-family: var(--paragraph-font);
+    font-size: .8rem;
 }
 
-img {
-    box-shadow: 0 0 30px 5px var(--secondary-color);
-    width: auto;
-    max-width: 200px;
+#cards img {
+    width: 50px;
     height: auto;
-    margin-top: 1rem; 
+    margin: 1rem; 
 }
 
-
-
-
-
+#cards a {
+    margin-top: 1rem;
+    color: var(--font-color)
+}
 
 footer {
     gap: 1rem;
     padding: 1rem;
+    border-top: 5px solid var(--accent1-color);
 }
 
 .authorInfo {

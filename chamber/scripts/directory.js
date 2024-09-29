@@ -41,9 +41,7 @@ const displayDirectory = (members) => {
 
         picture.setAttribute('src', member.image);
         picture.setAttribute('alt', `Icon for ${member.name}`);
-        picture.setAttribute('loading', 'lazy');
-        picture.setAttribute('width', '200');
-        picture.setAttribute('height', '200');
+        picture.setAttribute('loading', 'lazy');       
         name.textContent = `${member.name}`;
         address.textContent = `${member.address}`;
         phone.textContent = `${member.number}`;
