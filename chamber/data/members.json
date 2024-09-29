@@ -1,58 +1,58 @@
 [
     {
-        "name": null,
-        "address": null,
-        "number": null,
-        "website": false,
+        "name": "Gladiators' Guild",
+        "address": "The Coliseum Steps of Thal, Ul'dah 23646",
+        "number": "801-756-8634",
+        "website": "www.gladiators-guild.org",
         "image": null,
-        "membershipLevel": null
+        "membershipLevel": 3
     },
     {
-        "name": null,
-        "address": null,
-        "number": null,
-        "website": false,
+        "name": "Goldsmiths' Guild",
+        "address": "45 Hastings Strip Steps of Thal, Ul'dah 23646",
+        "number": "385-985-4458",
+        "website": "www.goldsmiths-guild.org",
         "image": null,
-        "membershipLevel": null
+        "membershipLevel": 3
     },
     {
-        "name": null,
-        "address": null,
-        "number": null,
-        "website": false,
+        "name": "Miners' Guild",
+        "address": "8 Onyx Lane Steps of Thal, Ul'dah 23646",
+        "number": "801-651-5779",
+        "website": "www.miners-rock.org",
         "image": null,
-        "membershipLevel": null
+        "membershipLevel": 2
     },
     {
-        "name": null,
-        "address": null,
-        "number": null,
-        "website": false,
+        "name": "Weavers' Guild",
+        "address": "23 Onyx Lane Steps of Thal, Ul'dah 23646",
+        "number": "801-368-7439",
+        "website": "www.weavers-guild.org",
         "image": null,
-        "membershipLevel": null
+        "membershipLevel": 1
     },
     {
-        "name": null,
-        "address": null,
-        "number": null,
-        "website": false,
+        "name": "Thaumaturges' Guild",
+        "address": "8 Emerald Avenue Steps of Nald, Ul'dah 23640",
+        "number": "801-376-7536",
+        "website": "www.thaum-guild.org",
         "image": null,
-        "membershipLevel": null
+        "membershipLevel": 1
     },
     {
-        "name": null,
-        "address": null,
-        "number": null,
-        "website": false,
+        "name": "Pugilists' Guild",
+        "address": "Platinum Mirage Steps of Nald, Ul'dah 23640",
+        "number": "801-369-1336",
+        "website": "www.pugilist-guild.org",
         "image": null,
-        "membershipLevel": null
+        "membershipLevel": 1
     },
     {
-        "name": null,
-        "address": null,
-        "number": null,
-        "website": false,
+        "name": "Adventurers' Guild",
+        "address": "30 Emerald Avenue Steps of Nald, Ul'dah 23640",
+        "number": "801-226-1796",
+        "website": "www.adventure-is-out-there.org",
         "image": null,
-        "membershipLevel": null
+        "membershipLevel": 2
     }
 ]

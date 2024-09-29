@@ -9,18 +9,29 @@
     --paragraph-font: 'Gowun Batang', serif;
 }
 
+/* * {
+    max-width: 2000px;
+    margin: 0 auto;
+} */
 
 h1, h2, header span {
     font-family: var(--heading-font);
 }
 
-header {
+header, footer {
     display: grid;
+    background-color: var(--background-color);
+    min-width: 285px;
+}
+
+h2 {
+    margin-left: 2rem;
+}
+
+header {
     grid-template-columns: 50px auto 50px;
     grid-template-rows: auto auto;
-    background-color: var(--background-color);
     transition: padding 0.5s ease-in-out;
-    min-width: 285px;
 }
 
 header picture, header button {
@@ -98,4 +109,32 @@ nav ul {
 
 nav.open {
     grid-template-rows: 1fr;
+}
+
+footer {
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.authorInfo {
+    min-width: 250px;
+}
+
+.contactInfo {
+    min-width: 200px;
+}
+
+.socials {
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    justify-items: center;
+}
+
+footer section {
+    display: grid;  
+}
+
+footer span {
+    font-family: var(--paragraph-font);
+    color: var(--font-color); 
 }

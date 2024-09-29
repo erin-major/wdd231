@@ -22,6 +22,18 @@
     nav {
         grid-template-rows: 1fr;
     }
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+        font-size: .8rem;
+        transition: font-size 0.5s ease-out;   
+    }
+    
+    .contactInfo {
+        min-width: 190px;
+    }
 }
 
 @media screen and (min-width: 23rem) {
@@ -29,5 +41,21 @@
     header span {
         font-size: 1.2rem;
         transition: font-size 0.5s ease-out;        
+    }
+}
+
+@media screen and (min-width: 43rem) {
+
+    footer {
+        font-size: 1rem;
+        transition: font-size 0.5s ease-out;
+    }
+
+    .authorInfo {
+        min-width: 270px;
+    }
+    
+    .contactInfo {
+        min-width: 215px;
     }
 }
