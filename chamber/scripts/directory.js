@@ -26,11 +26,12 @@ async function getDirectoryData() {
     const response = await fetch(url);
     const data = await response.json();
     // console.table(data);
-    return data;
+    return data.members;
 };
 
 const displayDirectory = (members) => {
     cards.innerHTML = '';
+    console.log(members);
 
     members.forEach((member) => {
         let card = document.createElement('section');
@@ -62,6 +63,6 @@ const displayDirectory = (members) => {
 };
 
 (async () => {
-    directory = await getDirectoryData();
-    displayDirectory(directory);
+    members = await getDirectoryData();
+    displayDirectory(members);
 })();
