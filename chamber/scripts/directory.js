@@ -25,13 +25,11 @@ menu.addEventListener('click', () => {
 async function getDirectoryData() {
     const response = await fetch(url);
     const data = await response.json();
-    // console.table(data);
     return data.members;
 };
 
 const displayDirectory = (members) => {
     cards.innerHTML = '';
-    console.log(members);
 
     members.forEach((member) => {
         let card = document.createElement('section');
@@ -41,14 +39,14 @@ const displayDirectory = (members) => {
         let phone = document.createElement('span');
         let website = document.createElement('a');
 
-        picture.setAttribute('src', member.imageurl);
+        picture.setAttribute('src', member.image);
         picture.setAttribute('alt', `Icon for ${member.name}`);
         picture.setAttribute('loading', 'lazy');
         picture.setAttribute('width', '200');
         picture.setAttribute('height', '200');
         name.textContent = `${member.name}`;
         address.textContent = `${member.address}`;
-        phone.textContent = `${member.phone}`;
+        phone.textContent = `${member.number}`;
         website.setAttribute('href', member.website);
         website.textContent = `${member.website}`;
 
