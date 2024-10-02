@@ -6,6 +6,14 @@ const navLinks = document.querySelectorAll('nav a');
 const all = document.querySelector('#all');
 const cse = document.querySelector('#cse');
 const wdd = document.querySelector('#wdd');
+const weatherIcon = document.querySelector('#weather-icon');
+const iconCaption = document.querySelector('#icon-caption');
+const currentTemp = document.querySelector('#current-temp');
+
+const lat = 40.29678579996306; 
+const long = -111.69417527604703;
+
+weatherUrl = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&appid=e4745822e1d8fb82087c4494c8088642`;
 
 const today = new Date();
 
@@ -145,7 +153,34 @@ function calculateRequired(filteredCourses) {
     }, 0);
 };
 
+async function fetchApi(url) {
+    try {
+        const response = await fetch(url);       
+        if(response.ok) {
+            const data = await response.json();
+            console.log(data);
+            displayWeather(data);
+        }
+        else {
+            throw Error(await response.text());
+        }
+    }
+    catch(e) {
+        console.log(e);
+    } 
+}
+
+function displayWeather(data) {
+    let iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    let description = data.weather[0].description;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', description);
+    iconCaption.innerHTML = description;
+    currentTemp.innerHTML = `The current temp is ${data.main.temp}&deg; F.`;
+}
+
 displayCourses(courses);
+fetchApi(weatherUrl);
 
 all.addEventListener('click', () => {
     displayCourses(courses);
