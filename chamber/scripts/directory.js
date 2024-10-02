@@ -1,23 +1,12 @@
-const currentYear = document.querySelector('#currentyear');
-const lastModified = document.querySelector('#lastModified');
+import displayFooter from "./footer.mjs";
+
 const menu = document.querySelector('#menu');
 const navElement = document.querySelector('#animation');
 const url = 'https://erin-major.github.io/wdd231/chamber/data/members.json';
 const cards = document.querySelector('#cards');
-let members = null;
 const cardView = document.querySelector('#cardView');
 const tableView = document.querySelector('#tableView');
-
-const today = new Date();
-
-let todayFormatted = today.toLocaleDateString('en-us', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-});
-
-currentYear.innerHTML = `©️ ${today.getFullYear()} Ul'dah Chamber of Commerce`;
-lastModified.innerHTML = `Last Modified: ${todayFormatted}`;
+let members = null;
 
 menu.addEventListener('click', () => {
     menu.classList.toggle("open");
@@ -125,3 +114,5 @@ const displayTableDirectory = (members) => {
     members = await getDirectoryData();
     displayCardDirectory(members);
 })();
+
+displayFooter();
