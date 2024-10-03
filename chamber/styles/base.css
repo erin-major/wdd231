@@ -207,3 +207,15 @@ footer span {
     font-family: var(--paragraph-font);
     color: var(--font-color); 
 }
+
+.home {
+    display: grid;   
+}
+
+.home h1 {
+    grid-row: 1/2;
+}
+
+.events, .weather, .forecast {
+    grid-row: 2/3;
+}

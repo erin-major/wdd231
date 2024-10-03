@@ -2,6 +2,7 @@ import displayFooter from "./footer.mjs";
 
 const menu = document.querySelector('#menu');
 const navElement = document.querySelector('#animation');
+
 // const url = 'https://erin-major.github.io/wdd231/chamber/data/members.json';
 // const cards = document.querySelector('#cards');
 // const cardView = document.querySelector('#cardView');

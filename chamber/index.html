@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-large.css">
     <script src="scripts/index.js" type="module"></script>
+    <script src="scripts/weather.js" defer></script>
     <meta property="og:title" content="Ul'dah Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://erin-major.github.io/wdd231/chamber/images/uldah-night.jpg">
@@ -44,6 +45,7 @@
     </nav>
     <main>
         <picture class="hero"></picture>
+        <span id="call-to-action"></span>
         <section class="home">
             <h2>Home</h2>
             <span id="callToAction"></span>
@@ -53,15 +55,15 @@
             </section>
             <section class="weather">
                 <h3>Current Weather</h3>
-                <table></table>
+                <img id="weather-icon" src="" alt="">
+                <div id="current-temp"></div>
             </section>
             <section class="forecast">
                 <h3>Weather Forecast</h3>
-                <table></table>
+                <div id="weather-forecast"></div>
             </section>
             <section class="spotlights"></section>
         </section>
-
 </section>
     <footer>
         <div class="contactInfo">
