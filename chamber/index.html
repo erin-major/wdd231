@@ -44,8 +44,15 @@
         </ul>
     </nav>
     <main>
-        <picture class="hero"></picture>
-        <span id="call-to-action"></span>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-wide.webp" media="(min-width: 40rem)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 23rem)">
+                <img src="images/hero-small.webp"
+                    alt="A fantastical cityscape with towering spires and domed structures, richly detailed with ornate architecture, set against a dramatic, cloudy sky">
+            </picture>
+            <span id="call-to-action">Join Now!</span>
+        </div>
         <section class="home">
             <h2>Home</h2>
             <span id="callToAction"></span>

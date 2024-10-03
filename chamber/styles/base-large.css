@@ -61,7 +61,7 @@
     header span {
         font-size: 1.2rem;
         transition: font-size 0.5s ease-out;        
-    }
+    }   
 }
 
 @media screen and (min-width: 43rem) {
@@ -78,4 +78,5 @@
     .contactInfo {
         min-width: 215px;
     }
+
 }

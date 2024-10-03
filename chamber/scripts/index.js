@@ -2,6 +2,7 @@ import displayFooter from "./footer.mjs";
 
 const menu = document.querySelector('#menu');
 const navElement = document.querySelector('#animation');
+const joinNow = document.querySelector('#call-to-action');
 
 // const url = 'https://erin-major.github.io/wdd231/chamber/data/members.json';
 // const cards = document.querySelector('#cards');
@@ -12,6 +13,11 @@ const navElement = document.querySelector('#animation');
 menu.addEventListener('click', () => {
     menu.classList.toggle("open");
     navElement.classList.toggle("open");
+});
+
+joinNow.addEventListener('click', () => {
+    joinNow.classList.toggle("clicked");
+    // Will likely add an event here
 });
 
 // cardView.addEventListener('click', () => {
