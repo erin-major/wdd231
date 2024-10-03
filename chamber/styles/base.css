@@ -27,6 +27,7 @@ header, footer {
 
 h2 {
     margin-left: 2rem;
+    font-size: 2rem;
 }
 
 header {
@@ -209,11 +210,8 @@ footer span {
 }
 
 .home {
-    display: grid;   
-}
-
-.home h1 {
-    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;   
 }
 
 .events, .weather, .forecast {
@@ -248,11 +246,16 @@ footer span {
 
 .events, .weather, .forecast {
     display: grid;
+    grid-template-rows: 80px;
     border: 2px solid var(--accent1-color);
-    margin: 1rem;
-    padding: 1rem;
+    margin: 0px 10px 20px;    
 }
 
 .events h3, .weather h3, .forecast h3 {
     background-color: var(--accent2-color);
+    margin-top: 0;
+    text-align: left;
+    font-family: var(--heading-font);
+    padding: 20px;
+    font-size: 1.2rem;
 }
