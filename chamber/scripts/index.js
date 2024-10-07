@@ -30,11 +30,18 @@ const displaySpotlights = (members) => {
 
     let filteredMembers = members.filter(member => member.membershipLevel > 1);
 
+    for (let i = filteredMembers.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1)); 
+        [filteredMembers[i], filteredMembers[j]] = [filteredMembers[j], filteredMembers[i]];
+    }
+    
+    filteredMembers.length = 2;
+
     filteredMembers.forEach((member) => {
         let card = document.createElement('section');
         let picture = document.createElement('img');
         let name = document.createElement('span');
-        // let address = document.createElement('span');
+        let email = document.createElement('span');
         let phone = document.createElement('span');
         let website = document.createElement('a');
 
@@ -42,21 +49,20 @@ const displaySpotlights = (members) => {
         picture.setAttribute('alt', `Icon for ${member.name}`);
         picture.setAttribute('loading', 'lazy');       
         name.textContent = member.name;
-        // address.textContent = member.address;
+        email.textContent = `Email: ${member.email}`;
         phone.textContent = `Phone: ${member.number}`;
         website.setAttribute('href', member.website);
         website.textContent = `Website: ${member.website}`;
 
         card.appendChild(picture);
         card.appendChild(name);
-        // card.appendChild(address);
         card.appendChild(phone);
+        card.appendChild(email);
         card.appendChild(website);
 
         spotlights.appendChild(card);
     });    
 };
-
 
 (async () => {
     members = await getDirectoryData();
