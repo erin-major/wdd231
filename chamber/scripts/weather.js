@@ -2,7 +2,6 @@ const weatherSection = document.querySelector('.weather');
 const forecastSection = document.querySelector('.forecast');
 const weatherIcon = document.querySelector('#weather-icon');
 const currentTemp = document.querySelector('#current-temp');
-const weatherForecast = document.querySelector('.weather-forecast');
 
 const lat = 36.173124848645244;
 const lon = -115.13655699596647;

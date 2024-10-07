@@ -5,6 +5,7 @@
             "address": "The Coliseum Steps of Thal, Ul'dah 23646",
             "number": "801-756-8634",
             "website": "www.gladiators-guild.org",
+            "email": "ready_set_gladiate@gladiators-guild.org",
             "image": "https://erin-major.github.io/wdd231/chamber/images/gladiator.webp",
             "membershipLevel": 3
         },
@@ -13,6 +14,7 @@
             "address": "45 Hastings Strip Steps of Thal, Ul'dah 23646",
             "number": "385-985-4458",
             "website": "www.goldsmiths-guild.org",
+            "email": "crafted_in_carat@goldsmiths-guild.org",
             "image": "https://erin-major.github.io/wdd231/chamber/images/goldsmith.webp",
             "membershipLevel": 3
         },
@@ -21,6 +23,7 @@
             "address": "8 Onyx Lane Steps of Thal, Ul'dah 23646",
             "number": "801-651-5779",
             "website": "www.miners-rock.org",
+            "email": "ore_lords@miners-guild.org",
             "image": "https://erin-major.github.io/wdd231/chamber/images/miner.webp",
             "membershipLevel": 2
         },
@@ -29,6 +32,7 @@
             "address": "23 Onyx Lane Steps of Thal, Ul'dah 23646",
             "number": "801-368-7439",
             "website": "www.weavers-guild.org",
+            "email": "loom_legends@weavers-guild.org",
             "image": "https://erin-major.github.io/wdd231/chamber/images/weaver.webp",
             "membershipLevel": 1
         },
@@ -37,6 +41,7 @@
             "address": "8 Emerald Avenue Steps of Nald, Ul'dah 23640",
             "number": "801-376-7536",
             "website": "www.thaum-guild.org",
+            "email": "arcane_flames@thaum-guild.org",
             "image": "https://erin-major.github.io/wdd231/chamber/images/thaumaturge.webp",
             "membershipLevel": 1
         },
@@ -45,6 +50,7 @@
             "address": "Platinum Mirage Steps of Nald, Ul'dah 23640",
             "number": "801-369-1336",
             "website": "www.pugilist-guild.org",
+            "email": "power_punch@pugilist-guild.org",
             "image": "https://erin-major.github.io/wdd231/chamber/images/pugilist.webp",
             "membershipLevel": 1
         },
@@ -53,6 +59,7 @@
             "address": "30 Emerald Avenue Steps of Nald, Ul'dah 23640",
             "number": "801-226-1796",
             "website": "www.adventure-is-out-there.org",
+            "email": "fate_and_fortune@padventure-is-out-there.org",
             "image": "https://erin-major.github.io/wdd231/chamber/images/adventurer.webp",
             "membershipLevel": 2
         }
