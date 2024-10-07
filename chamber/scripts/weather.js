@@ -1,7 +1,5 @@
 const weatherSection = document.querySelector('.weather');
 const forecastSection = document.querySelector('.forecast');
-const weatherIcon = document.querySelector('#weather-icon');
-const currentTemp = document.querySelector('#current-temp');
 
 const lat = 36.173124848645244;
 const lon = -115.13655699596647;
@@ -43,6 +41,12 @@ async function apiForecastFetch(url) {
 
 function displayCurrentWeather(data) {
 
+    let weatherIcon = document.createElement('img');
+    let currentTemp = document.createElement('div');
+
+    weatherIcon.id = "weather-icon";
+    currentTemp.id = "current-temp";
+
     currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg; F`;
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     let desc = data.weather[0].description;
@@ -70,6 +74,9 @@ function displayCurrentWeather(data) {
         <br>
         Sunset: ${sunsetDate.toLocaleTimeString( 'en-US', { hour: '2-digit', minute: '2-digit', hour12: true })}
     `;
+
+    weatherSection.appendChild(weatherIcon);
+    weatherSection.appendChild(currentTemp);
 
     weatherSection.appendChild(displayDesc);
     weatherSection.appendChild(weatherDetails);
