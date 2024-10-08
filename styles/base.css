@@ -96,7 +96,7 @@ li {
     justify-content: space-evenly;
 }
 
-h3 {
+.filters span {
     flex: 1 1 auto;    
     background-color: var(--primary-color);    
     max-width: 10rem;
@@ -105,9 +105,10 @@ h3 {
     color: var(--background-color);
     font-size: 1.5rem;
     border: 2px solid var(--primary-color);
+    margin-bottom: 20px;
 }
 
-.selected {
+.filters span.selected {
     background-color: var(--background-color);
     color: var(--primary-color);
 }
@@ -201,4 +202,43 @@ footer {
     margin-top: 16px;
 }
 
+dialog {    
+    border-radius: 5px;
+    max-width: 500px;
+    background-color: var(--background-color);
+    color: var(--primary-color);  
+    width: 80%;  
+}
 
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+dialog h2, dialog h3 {
+    font-family: var(--heading-font);    
+}
+
+dialog button {
+    position: absolute;
+    top: 1.4rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--primary-color);    
+}
+
+dialog button:hover {
+    font-size: 2.3rem;
+}
+
+dialog button:focus {
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+dialog p {
+    font-family: var(--paragraph-font);
+    font-size: 1.2rem;
+    text-align: left;
+}

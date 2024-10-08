@@ -50,7 +50,7 @@
         content: 'X'
     }
 
-    h3 {
+    .filters span {
         max-width: 7rem;
     }
 }
@@ -86,7 +86,7 @@
         padding: 11px 0px;
     }
 
-    h3 {
+    .filters span {
         max-width: 5rem;
     }
 

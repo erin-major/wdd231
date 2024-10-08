@@ -9,6 +9,7 @@ const wdd = document.querySelector('#wdd');
 const weatherIcon = document.querySelector('#weather-icon');
 const iconCaption = document.querySelector('#icon-caption');
 const currentTemp = document.querySelector('#current-temp');
+const courseModal = document.querySelector('#course-details');
 
 const lat = 40.29678579996306; 
 const long = -111.69417527604703;
@@ -126,11 +127,21 @@ const courses = [
 function displayCourses(filteredCourses) {
     document.querySelector('#courses').innerHTML = "";
     const html = filteredCourses.map(
-        (course) => ` <figure id="course-${course.number}">
+        (course) => `<figure id="course-${course.number}">
             <p>${course.subject} ${course.number}</p>
             </figure>`
-    );
+        );
+            
     document.querySelector('#courses').innerHTML = html.join("");
+    
+    filteredCourses.forEach(course => {
+        let courseFigure = document.querySelector(`#course-${course.number}`);
+
+        courseFigure.addEventListener('click', () => {
+            displayCourseModal(course);
+        });
+    });
+
     changeCourseColor(filteredCourses);
     let remainingCredits = calculateRequired(filteredCourses);
     document.querySelector('#remainingCredits').innerHTML = `You have ${remainingCredits} of these credits left before you earn your certificate!`;
@@ -157,8 +168,7 @@ async function fetchApi(url) {
     try {
         const response = await fetch(url);       
         if(response.ok) {
-            const data = await response.json();
-            console.log(data);
+            const data = await response.json();            
             displayWeather(data);
         }
         else {
@@ -202,3 +212,24 @@ wdd.addEventListener('click', () => {
     cse.classList.remove('selected');
     all.classList.remove('selected');
 });
+
+function displayCourseModal(course) {
+    courseModal.innerHTML = ``;
+    courseModal.innerHTML = `
+        <button id="closeModal">&#x2718;</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technology</strong>: ${course.technology.join(', ')}</p>
+    `;
+
+    let closeModal = document.querySelector('#closeModal');
+
+    courseModal.showModal();    
+
+    closeModal.addEventListener('click', () => {
+        courseModal.close();
+    });
+}
