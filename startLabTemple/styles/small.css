@@ -1,2 +1,6 @@
 *{box-sizing: border-box;}
 
+#mydialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+}
