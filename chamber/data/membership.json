@@ -1,0 +1,26 @@
+{
+    "levels": [
+        {
+            "level": "non profit",
+            "cost": 0,
+            "benefits": ["Chamber Directory and Calendar Access", "Social Posts Promoting Business", "Member Pricing at Events"]
+        },
+        {
+            "level": "bronze",
+            "cost": 1500,
+            "benefits": ["Chamber Directory and Calendar Access", "Opportunity to Purchase Sponsorships", "Member Pricing at Events"]
+        },
+        {
+            "level": "silver",
+            "cost": 3000,
+            "benefits": ["Chamber Directory and Calendar Access", "Member Pricing at Events", "Opportunity to Purchase Sponsorships", 
+            "Social Posts Promoting Business", "Spotlight on Commerce Home Page"]
+        },
+        {
+            "level": "gold",
+            "cost": 5000,
+            "benefits": ["Chamber Directory and Calendar Access", "Member Pricing at Events", "Opportunity to Purchase Sponsorships", 
+            "Social Posts Promoting Business", "Spotlight on Commerce Home Page", "Seat at the Executive Roundtable"]
+        }   
+    ]
+}
