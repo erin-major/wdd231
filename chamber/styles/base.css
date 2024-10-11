@@ -369,10 +369,6 @@ form input:required:valid {
     border-bottom-color: var(--accent2-color);
 }
 
-form select {
-    width: 95%;
-}
-
 .application-page h2 {
     font-size: 1.6rem;
 }
