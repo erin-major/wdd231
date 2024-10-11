@@ -86,8 +86,8 @@ ul.menuLinks li a {
     color: var(--font-color);
 }
 
-li.active a {
-    background-color: rgba(0,0,0,0.1);
+nav ul.menuLinks li.active a {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 ul.menuLinks {
@@ -253,20 +253,22 @@ footer span {
     width: 100%;
 }
 
-.hero span {
+.hero a {
     font-family: var(--heading-font);
     font-weight: bold;
     position: absolute;
-    font-size: 1rem;
+    font-size: 1.2rem;
     bottom: 2rem;
     right: 2rem;
     background-color: var(--background-color);
     padding: 1.1rem;
     border-radius: 10px;    
     box-shadow: 0 0 10px 1px var(--accent2-color);
+    text-decoration: none;
+    color: var(--font-color);
 }
 
-.hero span:hover {
+.hero a:hover {
     background-color: var(--primary-color);
     box-shadow: 0 0 10px 1px var(--accent1-color);
 }
