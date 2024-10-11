@@ -43,38 +43,44 @@
         </ul>
     </nav>
     <main>
-        <form method="GET" action="thankyou.html">
-            <h2>Membership Application Form</h2>
-            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-            <label>Organizational Title <input type="text" name="orgTitle" autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$" title="Organizational Title"></label>
-            <label>Email Address <input type="email" name="email" required autocomplete="email" title="Your Email Address" placeholder="example@domain.com"></label>
-            <label>Mobile Phone Number <input type="telephone" name="phone" required autocomplete="tel-national" title="Your Mobile Phone Number"></label>
-            <label>Guild's Name <input type="text" name="guildName" required autocomplete="organization" title="Your Guild's Name"></label>
-            <label>Membership Level
-                <select id="membershipLevel" name="membershipLevel">
-                    <option disabled selected value="default">Select a membership level</option>
-                    <option value="np">Non Profit</option>
-                    <option value="bronze">Bronze</option>
-                    <option value="silver">Silver</option>
-                    <option value="gold">Gold</option>
-                </select>
-            </label>
-            <label>Description of Guild
-                <textarea name="guildDescription" title="A Description of your Guild" rows="6"></textarea>
-            </label>
-            <input type="hidden" name="timestamp" id="timestamp">
-            <input type="submit" value="Submit Application for Review">
-        </form>
-        <section id="membership-level-info"></section>
-        <dialog id="membershipDialog">
-            <div>
-              <h4></h4>
-              <button>&#x2716;</button>
-            </div>
-            <p id="cost"></p>
-            <p id="benefits"></p>
-          </dialog>
+        <div class="application-page">
+            <form id="membershipForm" method="GET" action="thankyou.html">
+                <h2>Membership Application Form</h2>
+                <div class="personal">
+                    <label><strong>First Name</strong><input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                    <label><strong>Last Name</strong><input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                    <label><strong>Email Address</strong><input type="email" name="email" required autocomplete="email" title="Your Email Address" placeholder="example@domain.com"></label>
+                    <label><strong>Mobile Phone Number</strong><input type="telephone" name="phone" required autocomplete="tel-national" title="Your Mobile Phone Number"></label>
+                    <label><strong>Organizational Title</strong><input type="text" name="orgTitle" autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$" title="Organizational Title"></label>
+                </div>
+                <div class="organization">
+                    <label><strong>Guild's Name</strong><input type="text" name="guildName" required autocomplete="organization" title="Your Guild's Name"></label>
+                    <label><strong>Membership Level</strong>
+                        <select id="membershipLevel" name="membershipLevel" required>
+                            <option disabled selected value="default">Select a membership level</option>
+                            <option value="np">Non Profit</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                        </select>
+                    </label>
+                    <label><strong>Description of Guild</strong>
+                        <textarea name="guildDescription" title="A Description of your Guild" rows="6"></textarea>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Submit Application for Review">
+                </div>
+            </form>
+            <section id="membership-level-info"></section>
+            <dialog id="membershipDialog">
+                <div>
+                <h4></h4>
+                <button>&#x2716;</button>
+                </div>
+                <p id="cost"></p>
+                <p id="benefits"></p>
+            </dialog>
+        </div>
     </main>
     <footer>
         <div class="contactInfo">

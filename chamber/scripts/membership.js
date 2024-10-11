@@ -2,12 +2,14 @@ import displayFooter from "./footer.mjs";
 
 const menu = document.querySelector('#menu');
 const navElement = document.querySelector('#animation');
+const membershipForm = document.querySelector('#membershipForm');
 const membershipSection = document.querySelector('#membership-level-info');
 const membershipDialog = document.querySelector('#membershipDialog');
 const membershipTitle = document.querySelector('#membershipDialog h4');
 const closeButton = document.querySelector('#membershipDialog button');
 const membershipCost = document.querySelector(`#membershipDialog #cost`);
 const membershipBenefits = document.querySelector(`#membershipDialog #benefits`);
+const timeStamp = document.querySelector('#timestamp');
 let levels = null;
 
 const url = 'data/membership.json';
@@ -17,7 +19,13 @@ menu.addEventListener('click', () => {
     navElement.classList.toggle("open");
 });
 
-closeButton.addEventListener('click', () => membershipDialog.close());
+closeButton.addEventListener('click', () => {
+    membershipDialog.close()    
+});
+
+membershipForm.addEventListener('submit', () => {
+    timeStamp.value = Date.now();
+})
 
 async function getMembershipLevels() {
     const response = await fetch(url);
@@ -51,7 +59,7 @@ function displayMembershipCards(levels) {
 function showCards(level) {
     membershipTitle.innerHTML = `${level.level} Membership`;
     membershipCost.innerHTML = `Cost <br> ${level.cost.toLocaleString()} gil annually`;
-    membershipBenefits.innerHTML = `Benefits <br> ${level.benefits.map(benefit => `&#10019; ${benefit}`).join('<br>')}`;
+    membershipBenefits.innerHTML = `Benefits <br> ${level.benefits.map(benefit => `&#10023; ${benefit}`).join('<br>')}`;
     membershipDialog.showModal();
 };
 

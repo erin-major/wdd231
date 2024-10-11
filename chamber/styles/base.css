@@ -327,4 +327,132 @@ footer span {
     font-size: 1.3rem;
 }
 
+.application-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.application-page form {
+    display: block;
+    grid-column: 1/2;
+    font-family: var(--paragraph-font);
+    font-size: 1.2rem;
+}
+
+form input[type=text], form input[type=email], form input[type=telephone], form select, form textarea {
+    display: block;
+    margin: .1rem 0 1.5rem 0rem;
+    padding: .7rem;
+    width: 90%;    
+    color: var(--font-color);
+    border-radius: 5px;
+    border-color: var(--accent2-color);
+}
+
+form input:required {
+    border-bottom-width: 5px;
+    border-bottom-color: var(--accent1-color);
+}
+
+form input:required:focus {
+    border-bottom-width: 5px;
+    border-bottom-color: var(--accent2-color);
+}
+
+form input:required:valid {
+    border-bottom-width: 5px;
+    border-bottom-color: var(--accent2-color);
+}
+
+form select {
+    width: 95%;
+}
+
+.application-page #membership-level-info {
+    grid-column: 2/3;
+}
+
+.personal {
+    margin-bottom: 1rem;
+}
+
+.organization, .personal {
+    border: 3px solid var(--primary-color);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px var(--primary-color);
+}
+
+form input[type=submit] {
+    padding: .8rem;
+    font-family: var(--paragraph-font);
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid var(--accent2-color);
+    transition: background-color 0.3s ease-in;
+}
+
+form input[type=submit]:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px 1px var(--primary-color);
+    transition: background-color 0.3s ease-in;
+}
+
+#membership-level-info h3 {
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+}
+
+#membership-level-info section {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--accent1-color-light);
+    border: 2px solid var(--accent1-color);
+    border-radius: 15px 30px;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    color: var(--font-color);
+    font-family: var(--paragraph-font);
+    /* opacity: 0; */
+    /* animation-name: fadein;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+    animation-duration: 2s; */
+}
+
+/* @keyframes fadein {
+    0% { 
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+
+#membership-level-info span {
+    cursor: pointer;
+    padding: .7rem;
+    border: 2px solid var(--accent1-color);
+    border-radius: 5px;
+    background-color: var(--accent2-color-light);
+    /* transition: background-color 0.3s ease-in; */
+}
+
+#membership-level-info span:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px 1px var(--accent1-color);
+    /* transition: background-color 0.3s ease-in; */
+}
+
+dialog {
+    display: grid;
+}
+
+
 /* Animate the membership levels */
