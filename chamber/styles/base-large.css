@@ -100,7 +100,11 @@
     header span {
         font-size: 1.2rem;
         transition: font-size 0.5s ease-out;        
-    }   
+    }
+
+    dialog {
+        width: 450px;
+    }
 }
 
 @media screen and (min-width: 43rem) {
@@ -116,6 +120,21 @@
     
     .contactInfo {
         min-width: 215px;
+    }
+}
+
+@media screen and (min-width: 50rem) {
+    
+    .application-page {       
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .application-page form {
+        grid-column: 1/2;
+    }
+
+    .application-page #membership-level-info {
+        grid-column: 2/3;
     }
 
 }

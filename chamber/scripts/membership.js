@@ -2,13 +2,13 @@ import displayFooter from "./footer.mjs";
 
 const menu = document.querySelector('#menu');
 const navElement = document.querySelector('#animation');
-const membershipForm = document.querySelector('#membershipForm');
+const membershipForm = document.querySelector('#membership-form');
 const membershipSection = document.querySelector('#membership-level-info');
-const membershipDialog = document.querySelector('#membershipDialog');
-const membershipTitle = document.querySelector('#membershipDialog h4');
-const closeButton = document.querySelector('#membershipDialog button');
-const membershipCost = document.querySelector(`#membershipDialog #cost`);
-const membershipBenefits = document.querySelector(`#membershipDialog #benefits`);
+const membershipDialog = document.querySelector('#membership-dialog');
+const membershipTitle = document.querySelector('#membership-dialog h4');
+const closeButton = document.querySelector('#membership-dialog button');
+const membershipCost = document.querySelector(`#membership-dialog #cost`);
+const membershipBenefits = document.querySelector(`#membership-dialog #benefits`);
 const timeStamp = document.querySelector('#timestamp');
 let levels = null;
 
@@ -57,9 +57,9 @@ function displayMembershipCards(levels) {
 };
 
 function showCards(level) {
-    membershipTitle.innerHTML = `${level.level} Membership`;
-    membershipCost.innerHTML = `Cost <br> ${level.cost.toLocaleString()} gil annually`;
-    membershipBenefits.innerHTML = `Benefits <br> ${level.benefits.map(benefit => `&#10023; ${benefit}`).join('<br>')}`;
+    membershipTitle.innerHTML = `${level.level}`;
+    membershipCost.innerHTML = `<strong>Cost</strong><br>${level.cost.toLocaleString()} gil annually`;
+    membershipBenefits.innerHTML = `<strong>Benefits</strong><br>${level.benefits.map(benefit => `&#10023; ${benefit}`).join('<br>')}`;
     membershipDialog.showModal();
 };
 

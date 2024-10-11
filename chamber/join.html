@@ -44,19 +44,19 @@
     </nav>
     <main>
         <div class="application-page">
-            <form id="membershipForm" method="GET" action="thankyou.html">
+            <form id="membership-form" method="GET" action="thankyou.html">
                 <h2>Membership Application Form</h2>
                 <div class="personal">
                     <label><strong>First Name</strong><input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
                     <label><strong>Last Name</strong><input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
                     <label><strong>Email Address</strong><input type="email" name="email" required autocomplete="email" title="Your Email Address" placeholder="example@domain.com"></label>
                     <label><strong>Mobile Phone Number</strong><input type="telephone" name="phone" required autocomplete="tel-national" title="Your Mobile Phone Number"></label>
-                    <label><strong>Organizational Title</strong><input type="text" name="orgTitle" autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$" title="Organizational Title"></label>
+                    <label><strong>Organizational Title</strong><input type="text" name="org-title" autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$" title="Organizational Title"></label>
                 </div>
                 <div class="organization">
-                    <label><strong>Guild's Name</strong><input type="text" name="guildName" required autocomplete="organization" title="Your Guild's Name"></label>
+                    <label><strong>Guild's Name</strong><input type="text" name="guild-name" required autocomplete="organization" title="Your Guild's Name"></label>
                     <label><strong>Membership Level</strong>
-                        <select id="membershipLevel" name="membershipLevel" required>
+                        <select id="membership-level" name="membershipLevel" required>
                             <option disabled selected value="default">Select a membership level</option>
                             <option value="np">Non Profit</option>
                             <option value="bronze">Bronze</option>
@@ -65,14 +65,14 @@
                         </select>
                     </label>
                     <label><strong>Description of Guild</strong>
-                        <textarea name="guildDescription" title="A Description of your Guild" rows="6"></textarea>
+                        <textarea name="guild-description" title="A Description of your Guild" rows="6"></textarea>
                 </label>
                 <input type="hidden" name="timestamp" id="timestamp">
                 <input type="submit" value="Submit Application for Review">
                 </div>
             </form>
             <section id="membership-level-info"></section>
-            <dialog id="membershipDialog">
+            <dialog id="membership-dialog">
                 <div>
                 <h4></h4>
                 <button>&#x2716;</button>

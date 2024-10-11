@@ -14,7 +14,7 @@ function show(data) {
         if (element.startsWith(data)) {
             submission = decodeURIComponent(element.split('=')[1]);
 
-            if (data === 'guildName') {
+            if (data === 'guild-name') {
                 submission = submission.replace(/\+/g, ' ');
             }
         }
@@ -31,7 +31,7 @@ submitInfo.innerHTML = `
     <p><strong>Name:</strong> ${show('first')} ${show('last')}</p>
     <p><strong>Email:</strong> ${show('email')}</p>
     <p><strong>Mobile Phone Number:</strong> ${show('phone')}</p>    
-    <p><strong>Guild Name:</strong> ${show('guildName')}</p>
+    <p><strong>Guild Name:</strong> ${show('guild-name')}</p>
     <p><strong>Submission Date:</strong> ${new Date(Number(show('timestamp'))).toLocaleString('en-us', {
         year: 'numeric',
         month: 'long',
