@@ -93,6 +93,10 @@
     .forecast span {
         padding-left: 1rem;
     }
+
+    .thank-you {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 23rem) {
