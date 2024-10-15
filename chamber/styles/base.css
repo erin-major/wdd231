@@ -159,6 +159,9 @@ nav.open {
     box-shadow: 0 0 10px 1px var(--primary-color);
     font-family: var(--paragraph-font);
     font-size: .8rem;
+}
+
+.spotlights section {
     height: 170px;
     width: 450px;
     justify-self: center;
