@@ -156,6 +156,7 @@ nav.open {
     box-shadow: 0 0 10px 1px var(--primary-color);
     font-family: var(--paragraph-font);
     font-size: .8rem;
+    min-height: 170px;
 }
 
 .spotlights span, .spotlights a {
