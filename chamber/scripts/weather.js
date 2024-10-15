@@ -52,6 +52,8 @@ function displayCurrentWeather(data) {
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+    weatherIcon.setAttribute('width', "100");
+    weatherIcon.setAttribute('height', "100");
 
     let displayDesc = document.createElement('span');
     displayDesc.classList.add('current-weather-desc');
