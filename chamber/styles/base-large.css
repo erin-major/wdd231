@@ -28,7 +28,8 @@
         gap: 1rem;
         padding: 1rem;
         font-size: .8rem;
-        transition: font-size 0.5s ease-out;   
+        transition: font-size 0.5s ease-out;
+        min-height: 360px;
     }
     
     .contactInfo {
