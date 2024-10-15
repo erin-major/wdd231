@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ul'dah Chamber of Commerce Discovery</title>
+    <meta name="description" content="The discovery page for the chamber of commerce for the city of Ul'dah.">
+    <meta name="author" content="Erin Major">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <script src="scripts/discover.js" type="module"></script>    
+    <meta property="og:title" content="Ul'dah Chamber of Commerce Discovery">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://erin-major.github.io/wdd231/chamber/images/uldah-night.jpg">
+    <meta property="og:url" content="https://erin-major.github.io/wdd231/chamber/directory.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:description" content="The discovery page for the chamber of commerce for the city of Ul'dah.">
+    <meta property="og:site_name" content="Ul'dah Chamber of Commerce Discovery">
+    <meta name="twitter:image:alt" content="The streets of Ul'dah at night with lights.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <picture>
+            <source srcset="images/flames-crest.webp" media="(min-width: 40rem)">
+            <img src="images/flames-crest-small.webp"             
+            alt="A scale with a diamond on the left and fire on the right." loading="lazy">
+        </picture>
+        <h1>Ul'dah</h1>
+        <span>Chamber of Commerce</span>
+        <button id="menu" title="menu"></button>       
+    </header>
+    <nav id="animation">
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li class="active"><a href="discover.html">Discover</a></li>            
+        </ul>
+    </nav>
+    <main>
+        <aside class="sidebar">
+            <h2>Information</h2>
+            <section>
+                <h3>Government</h3>
+                <p>Members of the Ul Dynasty claim their sovereignty by right of birth. Their will is carried out by the Divan, a group of eight viziers who oversee matters of law, finance, engineering, the interior, commerce, war, religious affairs, and palace affairs. However the influence of the sultans has been waning for some time, and at the present true power is wielded by the Syndicate, a council sat by six of Ul’dah’s most elite and influential.</p>
+            </section>
+            <section>
+                <h3>Population</h3>
+                <p>Population: 656,274 (2022)</p>
+                <p>Midlander Hyur: 30%<br>
+                    Highlander Hyur: 10%<br>
+                    Dunesfolk Lalaafell: 40%<br>
+                    Hellsguard Roegadyn: 10%<br>
+                    Other: 10%<br>
+                    Note: the race of refugees are not reflected in these numbers.
+                </p>
+            </section>
+            <section>
+                <h3>Events</h3>
+                <p>Year round events provide ample opportunities for visitors to the city!</p>
+                <p>Recent events include:<br>
+                    Heavensturn (January)<br>
+                    Valentione's Day (Februrary)<br>
+                    Hatching-tide (April)<br>
+                    Make It Rain Campaign (June)<br>
+                    Moonfire Faire (August)<br>
+                    And many more!
+                </p>
+            </section>
+        </aside>
+        <div class="images">
+            <h2>Gallery</h2>
+            <img href="images/chamber-of-rule.webp" alt="" loading="lazy">
+            <img href="images/aetheryte.webp" alt="" loading="lazy">
+            <img href="images/sapphire-avenue.webp" alt="" loading="lazy">
+            <img href="images/quicksand.webp" alt="" loading="lazy">
+            <img href="images/goblet.webp" alt="" loading="lazy">
+            <img href="images/gold-saucer.webp" alt="" loading="lazy">
+        </div>
+       
+        <!-- left side with info to users like demographics, stats, events, attractions, etc -->
+        <!-- localStorage for the date the user last visited - display one of three messages for the time between visits in sidebar content area -->
+        <!-- If this is the user's first visit, display "Welcome! Let us know if you have any questions.". -->
+        <!-- If the amount of time between visits is less than a day, display "Back so soon! Awesome!".
+        Otherwise, display the number of days in a message like this: "You last visited n days ago.", where n is the actual, whole number of days between visits. If the number of days is 1, then change the language to "day" not "days". -->
+        
+        <!-- Local photos of interest - 6 images -->
+    </main>
+    <footer>
+        <div class="contactInfo">
+            <span>Ul'dah Chamber of Commerce</span>
+            <span>5 The Gold Court</span>
+            <span>Steps of Thal, Ul'dah 23646</span>
+            <span>info@uldahchamber.org</span>
+            <span>801-319-3160</span>
+        </div>
+        <div class="socials">
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="images/youtube.svg" alt="Youtube" width="50" height="50">
+            </a>
+            <a href="https://x.com/home" target="_blank">
+            <img src="images/twitter.svg" alt="Twitter" width="50" height="50">
+            </a>
+            <a href="https://www.linkedin.com/feed/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="50" height="50">
+            </a>
+        </div>
+        <div class="authorInfo">
+            <span>WDD231 Class Project</span>
+            <span>Erin Major</span>
+            <span id="currentyear"></span>
+            <span id="lastModified"></span>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+

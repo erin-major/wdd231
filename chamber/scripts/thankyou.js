@@ -6,7 +6,6 @@ const submitInfo = document.querySelector('#submitInfo');
 
 const currentUrl = window.location.href.split('?');
 let formData = currentUrl[1].split('&')
-console.log(formData);
 let submission = null;
 
 function show(data) {
