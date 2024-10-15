@@ -204,6 +204,7 @@ footer {
     gap: 2rem;
     padding: 1rem;
     border-top: 5px solid var(--accent1-color);
+    min-height: 320px;
 }
 
 .authorInfo {
