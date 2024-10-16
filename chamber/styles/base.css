@@ -28,6 +28,10 @@ footer {
     min-width: 285px;
 }
 
+main {
+    display: grid;
+}
+
 h2 {
     margin-left: 2rem;
     font-size: 2rem;
@@ -238,10 +242,6 @@ footer span {
     color: var(--font-color); 
 }
 
-.home {
-    display: grid;       
-}
-
 .events {
     grid-row: 2/3;
 }
@@ -253,7 +253,6 @@ footer span {
 .forecast {
     grid-row: 4/5;
 }
-
 
 .hero {
     position: relative;
@@ -339,12 +338,35 @@ footer span {
     font-size: 1.3rem;
 }
 
-.application-page {
+.application-page, .information {
     display: grid;
     grid-template-columns: 1fr;    
     margin: 1rem;
     padding: 1rem;
     gap: 2rem;
+}
+
+.information img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px var(--accent2-color);
+    margin-bottom: 30px;    
+}
+
+.information section {
+    border: 2px solid var(--accent1-color);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    background-color: var(--accent1-color-light);    
+}
+
+.information h3 {
+    margin-top: 0;
+}
+
+.information span {
+    font-size: 1.4rem;
 }
 
 .application-page form {
@@ -509,3 +531,6 @@ dialog p {
     margin-left: 1rem;
     min-width: 285px;
 }
+
+
+

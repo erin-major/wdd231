@@ -43,53 +43,78 @@
         </ul>
     </nav>
     <main>
-        <aside class="sidebar">
-            <h2>Information</h2>
-            <section>
-                <h3>Government</h3>
-                <p>Members of the Ul Dynasty claim their sovereignty by right of birth. Their will is carried out by the Divan, a group of eight viziers who oversee matters of law, finance, engineering, the interior, commerce, war, religious affairs, and palace affairs. However the influence of the sultans has been waning for some time, and at the present true power is wielded by the Syndicate, a council sat by six of Ul’dah’s most elite and influential.</p>
-            </section>
-            <section>
-                <h3>Population</h3>
-                <p>Population: 656,274 (2022)</p>
-                <p>Midlander Hyur: 30%<br>
-                    Highlander Hyur: 10%<br>
-                    Dunesfolk Lalaafell: 40%<br>
-                    Hellsguard Roegadyn: 10%<br>
-                    Other: 10%<br>
-                    Note: the race of refugees are not reflected in these numbers.
-                </p>
-            </section>
-            <section>
-                <h3>Events</h3>
-                <p>Year round events provide ample opportunities for visitors to the city!</p>
-                <p>Recent events include:<br>
-                    Heavensturn (January)<br>
-                    Valentione's Day (Februrary)<br>
-                    Hatching-tide (April)<br>
-                    Make It Rain Campaign (June)<br>
-                    Moonfire Faire (August)<br>
-                    And many more!
-                </p>
-            </section>
-        </aside>
-        <div class="images">
-            <h2>Gallery</h2>
-            <img src="images/chamber-of-rule.webp" alt="" loading="lazy">
-            <img src="images/aetheryte.webp" alt="" loading="lazy">
-            <img src="images/sapphire-avenue.webp" alt="" loading="lazy">
-            <img src="images/quicksand.webp" alt="" loading="lazy">
-            <img src="images/goblet.webp" alt="" loading="lazy">
-            <img src="images/gold-saucer.webp" alt="" loading="lazy">
-        </div>
-       
-        <!-- left side with info to users like demographics, stats, events, attractions, etc -->
-        <!-- localStorage for the date the user last visited - display one of three messages for the time between visits in sidebar content area -->
-        <!-- If this is the user's first visit, display "Welcome! Let us know if you have any questions.". -->
-        <!-- If the amount of time between visits is less than a day, display "Back so soon! Awesome!".
-        Otherwise, display the number of days in a message like this: "You last visited n days ago.", where n is the actual, whole number of days between visits. If the number of days is 1, then change the language to "day" not "days". -->
-        
-        <!-- Local photos of interest - 6 images -->
+        <div class="information">      
+            <aside class="sidebar">
+                <h2>Information</h2>
+                <span id="visit-message"></span>
+                <section>
+                    <h3>Government</h3>
+                    <p>Members of the Ul Dynasty claim their sovereignty by right of birth. Their will is carried out by the Divan, a group of eight viziers who oversee matters of law, finance, engineering, the interior, commerce, war, religious affairs, and palace affairs. However the influence of the sultans has been waning for some time, and at the present true power is wielded by the Syndicate, a council sat by six of Ul’dah’s most elite and influential.</p>
+                </section>
+                <section>
+                    <h3>Population</h3>
+                    <p>Population: 656,274 (2022)</p>
+                    <p>Midlander Hyur: 30%<br>
+                        Highlander Hyur: 10%<br>
+                        Dunesfolk Lalaafell: 40%<br>
+                        Hellsguard Roegadyn: 10%<br>
+                        Other: 10%<br>
+                        Note: The race of refugees are not reflected in these numbers.
+                    </p>
+                </section>
+                <section>
+                    <h3>Events</h3>
+                    <p>Year round events provide ample opportunities for visitors to the city!</p>
+                    <p>Recent events include:<br>
+                        Heavensturn (January)<br>
+                        Valentione's Day (Februrary)<br>
+                        Hatching-tide (April)<br>
+                        Make It Rain Campaign (June)<br>
+                        Moonfire Faire (August)<br>
+                        And many more!
+                    </p>
+                </section>
+            </aside>
+            <div class="images">
+                <h2>Gallery</h2>
+                <picture>
+                    <source srcset="images/chamber-of-rule.webp" media="(min-width: 60rem)" loading="lazy" width="630" height="auto">
+                    <source srcset="images/chamber-of-rule-medium.webp" media="(min-width: 30rem)" loading="lazy" width="400" height="auto">
+                    <img src="images/chamber-of-rule-small.webp"             
+                    alt="A fountain in the middle of a stone plaza." loading="lazy" width="285" height="auto">
+                </picture>
+                <picture>
+                    <source srcset="images/aetheryte.webp" media="(min-width: 60rem)" loading="lazy" width="630" height="auto">
+                    <source srcset="images/aetheryte-medium.webp" media="(min-width: 30rem)" loading="lazy" width="400" height="auto">
+                    <img src="images/aetheryte-small.webp"             
+                    alt="A crystal suspended in the air with metal rings in the middle of a stone plaza." loading="lazy" width="285" height="auto">
+                </picture>
+                <picture>
+                    <source srcset="images/sapphire-avenue.webp" media="(min-width: 60rem)" loading="lazy" width="630" height="auto">
+                    <source srcset="images/sapphire-avenue-medium.webp" media="(min-width: 30rem)" loading="lazy" width="400" height="auto">
+                    <img src="images/sapphire-avenue-small.webp"             
+                    alt="A stone road with tent stalls for stores. Banners are strewn over the walkway." loading="lazy" width="285" height="auto">
+                </picture>
+                <picture>
+                    <source srcset="images/quicksand.webp" media="(min-width: 60rem)" loading="lazy" width="630" height="auto">
+                    <source srcset="images/quicksand-medium.webp" media="(min-width: 30rem)" loading="lazy" width="400" height="auto">
+                    <img src="images/quicksand-small.webp"             
+                    alt="A tavern with tables and laterns. A group of four people sit at a table" loading="lazy" width="285" height="auto">
+                </picture>
+                <picture>
+                    <source srcset="images/goblet.webp" media="(min-width: 60rem)" loading="lazy" width="630" height="auto">
+                    <source srcset="images/goblet-medium.webp" media="(min-width: 30rem)" loading="lazy" width="400" height="auto">
+                    <img src="images/goblet-small.webp"             
+                    alt="A waterfall into a pool. The pool has fountains and a gazebo in the middle. Houses surround the pool." loading="lazy" width="285" height="auto">
+                </picture>
+                <picture>
+                    <source srcset="images/gold-saucer.webp" media="(min-width: 60rem)" loading="lazy" width="630" height="auto">
+                    <source srcset="images/gold-saucer-medium.webp" media="(min-width: 30rem)" loading="lazy" width="400" height="auto">
+                    <img src="images/gold-saucer-small.webp"             
+                    alt="A desk with a cactus character in the middle. Stained glass and lights adorn the outside walls." loading="lazy" width="285" height="auto">
+                </picture>
+            </div>
+        </div>          
     </main>
     <footer>
         <div class="contactInfo">

@@ -46,7 +46,7 @@
 
     .filters {
         position: absolute;
-        top: -.6rem;
+        top: 1rem;
         right: 2rem;
         font-size: 3rem;
     }
@@ -97,6 +97,10 @@
     .thank-you {
         font-size: 1.5rem;
     }
+
+    .information {
+        grid-template-columns: .5fr 1fr;
+    }
 }
 
 @media screen and (min-width: 23rem) {
@@ -129,7 +133,7 @@
 
 @media screen and (min-width: 50rem) {
     
-    .application-page {       
+    .application-page{       
         grid-template-columns: 1fr 1fr;
     }
 
@@ -140,5 +144,4 @@
     .application-page #membership-level-info {
         grid-column: 2/3;
     }
-
 }
