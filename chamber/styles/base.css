@@ -536,7 +536,7 @@ dialog p {
     min-width: 285px;
 }
 
-#picture p {
+.picture p {
     min-width: 285px;
     max-width: 600px;
     background-color: var(--background-color);
@@ -548,7 +548,7 @@ dialog p {
     font-size: 1.3rem;
 }
 
-#picture {
+.picture {
     display: grid;
     justify-items: center;
     align-items: center;

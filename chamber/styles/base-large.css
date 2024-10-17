@@ -102,16 +102,16 @@
         grid-template-columns: .5fr 1fr;
     }  
 
-    #picture p {
+    .picture p {
         opacity: 0;
     }
 
-    #picture p, #picture picture {
+    .picture p, #picture picture {
         grid-row: 1/2;
         grid-column: 1/2;
     }
 
-    #picture p:hover {
+    .picture p:hover {
         opacity: 1;
     }
 
