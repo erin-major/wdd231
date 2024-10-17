@@ -106,7 +106,7 @@
         opacity: 0;
     }
 
-    .picture p, #picture picture {
+    .picture p, .picture picture {
         grid-row: 1/2;
         grid-column: 1/2;
     }
