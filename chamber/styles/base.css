@@ -348,8 +348,7 @@ footer span {
 
 .information img {
     border-radius: 10px;
-    box-shadow: 0 0 10px 1px var(--accent2-color);
-    margin-bottom: 30px;    
+    box-shadow: 0 0 10px 1px var(--accent2-color);      
 }
 
 .information section {
@@ -367,6 +366,11 @@ footer span {
 
 .information span {
     font-size: 1.4rem;
+}
+
+.gallery {
+    display: grid;
+    row-gap: 30px;
 }
 
 .application-page form {
@@ -530,6 +534,24 @@ dialog p {
     font-family: var(--paragraph-font);
     margin-left: 1rem;
     min-width: 285px;
+}
+
+#picture p {
+    min-width: 285px;
+    max-width: 600px;
+    background-color: var(--background-color);
+    padding: 1.5rem .5rem;
+    box-shadow: 0 0 10px 1px var(--primary-color);
+    border-radius: 5px;
+    color: var(--font-color);
+    font-family: var(--paragraph-font);
+    font-size: 1.3rem;
+}
+
+#picture {
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 
