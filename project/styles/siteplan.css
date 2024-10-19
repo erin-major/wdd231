@@ -1,0 +1,55 @@
+:root {
+    --primary-color: #209915;
+    --accent1-color: #6CCFF6;    
+    --accent2-color: #F92A82;
+    --background-color: #FFFACC;
+    --font-color: #00113C;
+
+    --heading-font: 'Playwrite GB S', sans-serif;
+    --paragraph-font: 'Playwrite DE Grund', sans-serif;
+}
+
+main {
+    margin-left: 2rem;    
+    color: var(--font-color);
+}
+
+h1, h2, h3, .heading {
+    font-family: var(--heading-font);    
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+.primary, .accent1, .accent2, .background, .font {    
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    margin-bottom: 2rem;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+
+.background {
+    background-color: var(--background-color);
+}
+
+.font {
+    background-color: var(--font-color);
+}
+
+p, li {
+    font-family: var(--paragraph-font);
+}
