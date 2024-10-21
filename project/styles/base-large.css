@@ -1,0 +1,29 @@
+@media screen and (min-width: 40rem) {
+    
+    header h1 {
+        font-size: 2.5rem;
+        margin: 2rem;
+        transition: margin 0.5s ease-out;
+        transition: font-size 0.5s ease-in;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: rgba(255, 255, 255, .3);
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+
+
+}
