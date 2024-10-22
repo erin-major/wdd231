@@ -34,6 +34,7 @@ h1 {
     font-size: 1.5rem;
     color: var(--font-color);
     background-color: var(--background-color);
+    border: 5px groove var(--primary-color);
     border-radius: 2px 20px 20px 20px;
     transition: margin 0.5s ease-out;
     transition: font-size 0.5s ease-in;
@@ -105,4 +106,24 @@ nav ul {
 
 nav.open {
     grid-template-rows: 1fr;
+}
+
+footer {
+    font-family: var(--paragraph-font);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-top: 8px double var(--accent2-color);
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+footer p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.socials a {
+    text-decoration: none;
+    padding: .5rem;
 }
