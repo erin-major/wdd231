@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #24AB17;
+    --accent1-color: #6CCFF6;    
+    --accent2-color: #F92A82;
+    --background-color: #FFFACC;
+    --font-color: #00113C;
+
+    --heading-font: serif;
+    --paragraph-font: sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    margin: 1rem;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}

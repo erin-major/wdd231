@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #24ab17;
+    --primary-color: #24AB17;
     --accent1-color: #6CCFF6;    
     --accent2-color: #F92A82;
     --background-color: #FFFACC;
@@ -116,10 +116,12 @@ footer {
     border-top: 8px double var(--accent2-color);
     gap: 2rem;
     padding-top: 1rem;
+    color: var(--font-color);
+    line-height: 2rem;
 }
 
 footer p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0;
 }
 
