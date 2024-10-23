@@ -9,12 +9,9 @@
     --paragraph-font: 'Playwrite DE Grund', sans-serif;
 }
 
-header, body, footer {
-    min-width: 350px;
-}
-
 body {
     background-color: var(--background-color);
+    min-width: 350px;
 }
 
 header {
@@ -66,6 +63,9 @@ header img {
 nav {
     background-color: var(--primary-color);
     font-family: var(--heading-font);
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
 }
 
 ul.menuLinks li a {      
@@ -94,12 +94,6 @@ ul.menuLinks {
     content: "\2613";
 }
 
-nav {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.5s ease-out;
-}
-
 nav ul {
     overflow: hidden;
 }
@@ -118,6 +112,7 @@ footer {
     padding-top: 1rem;
     color: var(--font-color);
     line-height: 2rem;
+    margin-bottom: 1rem;
 }
 
 footer p {
@@ -128,4 +123,31 @@ footer p {
 .socials a {
     text-decoration: none;
     padding: .5rem;
+}
+
+main {
+    font-family: var(--paragraph-font);
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1/2;
+}
+
+main p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 5rem;
+    min-height: 40px;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    border-bottom: 5px solid var(--accent1-color);
+}
+
+#information {
+    grid-column: 1/2;
+}
+
+div {
+    grid-column: 2/3;
 }
