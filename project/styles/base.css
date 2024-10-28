@@ -150,6 +150,7 @@ main h2 {
 #spotlights {
     flex-direction: column;
     margin-bottom: 3rem;
+    min-width: 330px;
 }
 
 #spotlights img {
