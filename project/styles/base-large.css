@@ -31,6 +31,10 @@
     #spotlights {
         min-height: 870px;
     }
+
+    #album {
+        min-height: 6290px;
+    }
 }
 
 @media screen and (min-width: 850px) {
@@ -55,6 +59,10 @@
     #spotlights img, #album img {
         width: 600px;
         margin: 2rem 0rem 2rem 2rem;
+    }
+
+    #album {
+        min-height: 3460px;
     }
     
 }

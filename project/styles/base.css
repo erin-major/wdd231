@@ -168,6 +168,7 @@ main h2 {
     margin-top: 2rem;
     flex-wrap: wrap;
     justify-content: space-around;
+    min-height: 5300;
 }
 
 #spotlights img, #album img {
