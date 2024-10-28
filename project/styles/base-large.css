@@ -27,6 +27,10 @@
     #spotlights img {
         width: 400px;
     }
+
+    #spotlights {
+        min-height: 1170px;
+    }
 }
 
 @media screen and (min-width: 850px) {
@@ -45,6 +49,7 @@
     #spotlights {
         grid-column: 2/3;
         min-width: 650px;
+        min-height: 1960px;
     }
 
     #spotlights img {
