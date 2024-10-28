@@ -116,9 +116,9 @@ function displayGallery(images) {
         let card = document.createElement('section');
         let picture = document.createElement('img');        
 
-        picture.setAttribute('src', image.url);
-        // picture.setAttribute('alt', `Icon for ${member.name}`);
-        picture.setAttribute('loading', 'lazy');       
+        picture.setAttribute('src', image.url);        
+        picture.setAttribute('loading', 'lazy');
+        picture.setAttribute('alt', image.alt);       
         
         card.appendChild(picture);
 

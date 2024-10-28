@@ -1,67 +1,88 @@
 {
     "gallery": [
         {
-            "url": "images/photo-1.webp"
+            "url": "images/photo-1.webp",
+            "alt": "Green and purple northern lights over a mountain and lake."
         },
         {
-            "url": "images/photo-2.webp"
+            "url": "images/photo-2.webp",
+            "alt": "Blue northern lights over an igloo and walls of snow."
         },
         {
-            "url": "images/photo-3.webp"
+            "url": "images/photo-3.webp",
+            "alt": "Green northern lights in a blue sky over rocks and water."
         },
         {
-            "url": "images/photo-4.webp"
+            "url": "images/photo-4.webp",
+            "alt": "Green northern lights reflecting into a large body of water over snow capped mountains."
         },
         {
-            "url": "images/photo-5.webp"
+            "url": "images/photo-5.webp",
+            "alt": "Green northern lights viewable through the trees as looking up from the trunks of the trees."
         },
         {
-            "url": "images/photo-6.webp"
+            "url": "images/photo-6.webp",
+            "alt": "Teal northern lights swirling over distant mountains."
         },
         {
-            "url": "images/photo-7.webp"
+            "url": "images/photo-7.webp",
+            "alt": "Green northern lights over a snowy field with trees on the left."
         },
         {
-            "url": "images/photo-8.webp"
+            "url": "images/photo-8.webp",
+            "alt": "Blue nothern lights in a blue sky over a home. The home has lights and is surrounded by snow and trees."
         },
         {
-            "url": "images/photo-9.webp"
+            "url": "images/photo-9.webp",
+            "alt": "Green northern lights over trees with snow at the ground level."
         },
         {
-            "url": "images/photo-10.webp"
+            "url": "images/photo-10.webp",
+            "alt": "Teal northern lights over mountains and a shack covered in snow."
         },
         {
-            "url": "images/photo-11.webp"
+            "url": "images/photo-11.webp",
+            "alt": "Green and purple northern lights over grassy mountains and fields."
         },
         {
-            "url": "images/photo-12.webp"
+            "url": "images/photo-12.webp",
+            "alt": "Light blue northern lights over gray rocks and a large body of water."
         },
         {
-            "url": "images/photo-13.webp"
+            "url": "images/photo-13.webp",
+            "alt": "Green and purple northern lights. A building and trees are barely visible along the bottom."
         },
         {
-            "url": "images/photo-14.webp"
+            "url": "images/photo-14.webp",
+            "alt": "Green northern lights and clouds over snowy mountains, a lake, and a snowy, rocky beach."
         },
         {
-            "url": "images/photo-15.webp"
+            "url": "images/photo-15.webp",
+            "alt": "A large blue river with a waterfall. Rocks are on both shores. Green northern lights are barely visible in the sky."
         },
         {
-            "url": "images/photo-16.webp"
+            "url": "images/photo-16.webp",
+            "alt": "Teal northern lights over bright green trees in a forest."
         },
         {
-            "url": "images/photo-17.webp"
+            "url": "images/photo-17.webp",
+            "alt": "Faint green northern lights shine over a hill covered in snow."
         },
         {
-            "url": "images/photo-18.webp"
+            "url": "images/photo-18.webp",
+            "alt": "Purple and green northern lights are barely visible in a stary sky. A distant forest has a campfire lighting up the trees and lake."
         },
         {
-            "url": "images/photo-19.webp"
+            "url": "images/photo-19.webp",
+            "alt": "White and blue northern lights shine down on a snowy mountain and iced over lake."
         },
         {
-            "url": "images/photo-20.webp"
+            "url": "images/photo-20.webp",
+            "alt": "Teal northern lights are visible in the distance. An icy mountain and snow cover the foreground."
         },
         {
-            "url": "images/photo-21.webp"
+            "url": "images/photo-21.webp",
+            "alt": "Red and green northern lights shine over a forest."
         }
     ]
 }
