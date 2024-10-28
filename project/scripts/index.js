@@ -110,7 +110,7 @@ function displayGallery(images) {
         [images[i], images[j]] = [images[j], images[i]];
     }
     
-    images.length = 4;
+    images.length = 3;
 
     images.forEach((image) => {
         let card = document.createElement('section');
