@@ -2,87 +2,129 @@
     "gallery": [
         {
             "url": "images/photo-1.webp",
-            "alt": "Green and purple northern lights over a mountain and lake."
+            "alt": "Green and purple northern lights over a mountain and lake.",
+            "photographer": "Visit Greenland",
+            "title": "Aurora Borealis 360912"
         },
         {
             "url": "images/photo-2.webp",
-            "alt": "Blue northern lights over an igloo and walls of snow."
+            "alt": "Blue northern lights over an igloo and walls of snow.",
+            "photographer": "Frans van Heerden",
+            "title": "Aurora Borealis 624015"
         },
         {
             "url": "images/photo-3.webp",
-            "alt": "Green northern lights in a blue sky over rocks and water."
+            "alt": "Green northern lights in a blue sky over rocks and water.",
+            "photographer": "Stein Egil Liland",
+            "title": "Aurora Borealis 3081835"
         },
         {
             "url": "images/photo-4.webp",
-            "alt": "Green northern lights reflecting into a large body of water over snow capped mountains."
+            "alt": "Green northern lights reflecting into a large body of water over snow capped mountains.",
+            "photographer": "Stein Egil Liland",
+            "title": "Aurora Borealis 1933239"
         },
         {
             "url": "images/photo-5.webp",
-            "alt": "Green northern lights viewable through the trees as looking up from the trunks of the trees."
+            "alt": "Green northern lights viewable through the trees as looking up from the trunks of the trees.",
+            "photographer": "Margerretta",
+            "title": "Aurora Borealis 902756"
         },
         {
             "url": "images/photo-6.webp",
-            "alt": "Teal northern lights swirling over distant mountains."
+            "alt": "Teal northern lights swirling over distant mountains.",
+            "photographer": "Tobias Bjørkli",
+            "title": "Photo of Aurora During Evening 1938348"
         },
         {
             "url": "images/photo-7.webp",
-            "alt": "Green northern lights over a snowy field with trees on the left."
+            "alt": "Green northern lights over a snowy field with trees on the left.",
+            "photographer": "Pixabay",
+            "title": "Milky Way At Night 41004"
         },
         {
             "url": "images/photo-8.webp",
-            "alt": "Blue nothern lights in a blue sky over a home. The home has lights and is surrounded by snow and trees."
+            "alt": "Blue nothern lights in a blue sky over a home. The home has lights and is surrounded by snow and trees.",
+            "photographer": "Stefan Stefancik",
+            "title": "Brown Cottage Under Aurora Borealis 91216"
         },
         {
             "url": "images/photo-9.webp",
-            "alt": "Green northern lights over trees with snow at the ground level."
+            "alt": "Green northern lights over trees with snow at the ground level.",
+            "photographer": "Suomi Photography",
+            "title": "Green Aurora Phenomenon 2024887"
         },
         {
             "url": "images/photo-10.webp",
-            "alt": "Teal northern lights over mountains and a shack covered in snow."
+            "alt": "Teal northern lights over mountains and a shack covered in snow.",
+            "photographer": "Tobias Bjørkli",
+            "title": "Aurora Borealis 1674624"
         },
         {
             "url": "images/photo-11.webp",
-            "alt": "Green and purple northern lights over grassy mountains and fields."
+            "alt": "Green and purple northern lights over grassy mountains and fields.",
+            "photographer": "Stein Egil Liland",
+            "title": "Landscape Photography of Mountain 3384692"
         },
         {
             "url": "images/photo-12.webp",
-            "alt": "Light blue northern lights over gray rocks and a large body of water."
+            "alt": "Light blue northern lights over gray rocks and a large body of water.",
+            "photographer": "Pixabay",
+            "title": "Green Aurora Lights Above Body of Water 33201"
         },
         {
             "url": "images/photo-13.webp",
-            "alt": "Green and purple northern lights. A building and trees are barely visible along the bottom."
+            "alt": "Green and purple northern lights. A building and trees are barely visible along the bottom.",
+            "photographer": "Harrison Haines",
+            "title": "Northern Lights During Night Time 3536278"
         },
         {
             "url": "images/photo-14.webp",
-            "alt": "Green northern lights and clouds over snowy mountains, a lake, and a snowy, rocky beach."
+            "alt": "Green northern lights and clouds over snowy mountains, a lake, and a snowy, rocky beach.",
+            "photographer": "Stein Egil Liland",
+            "title": "Aurora Borealis Photo 1933318"
         },
         {
             "url": "images/photo-15.webp",
-            "alt": "A large blue river with a waterfall. Rocks are on both shores. Green northern lights are barely visible in the sky."
+            "alt": "A large blue river with a waterfall. Rocks are on both shores. Green northern lights are barely visible in the sky.",
+            "photographer": "Boris Ulzibat",
+            "title": "Body of Water Between Rock Formation 1776898"
         },
         {
             "url": "images/photo-16.webp",
-            "alt": "Teal northern lights over bright green trees in a forest."
+            "alt": "Teal northern lights over bright green trees in a forest.",
+            "photographer": "Suomi Photography",
+            "title": "Pine Trees Under Aurora Borealis 2024881"
         },
         {
             "url": "images/photo-17.webp",
-            "alt": "Faint green northern lights shine over a hill covered in snow."
+            "alt": "Faint green northern lights shine over a hill covered in snow.",
+            "photographer": "Tobias Bjørkli",
+            "title": "Snow Covered Terrain 2113564"
         },
         {
             "url": "images/photo-18.webp",
-            "alt": "Purple and green northern lights are barely visible in a stary sky. A distant forest has a campfire lighting up the trees and lake."
+            "alt": "Purple and green northern lights are barely visible in a stary sky. A distant forest has a campfire lighting up the trees and lake.",
+            "photographer": "Harrison Haines",
+            "title": "Aurora Borealis Phenomenon 3172571"
         },
         {
             "url": "images/photo-19.webp",
-            "alt": "White and blue northern lights shine down on a snowy mountain and iced over lake."
+            "alt": "White and blue northern lights shine down on a snowy mountain and iced over lake.",
+            "photographer": "Frans van Heerden",
+            "title": "Aurora Borealis 3025005"
         },
         {
             "url": "images/photo-20.webp",
-            "alt": "Teal northern lights are visible in the distance. An icy mountain and snow cover the foreground."
+            "alt": "Teal northern lights are visible in the distance. An icy mountain and snow cover the foreground.",
+            "photographer": "Simon Migaj",
+            "title": "Water Falls 1009136"
         },
         {
             "url": "images/photo-21.webp",
-            "alt": "Red and green northern lights shine over a forest."
+            "alt": "Red and green northern lights shine over a forest.",
+            "photographer": "Tomasz",
+            "title": "Stunning Northern Lights Over Serene Lakeside Landscape 29080274"
         }
     ]
 }

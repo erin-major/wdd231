@@ -24,7 +24,7 @@
         grid-template-rows: 1fr;
     }
 
-    #spotlights img {
+    #spotlights img, #album img {
         width: 400px;
     }
 
@@ -52,7 +52,7 @@
         min-height: 1460px;
     }
 
-    #spotlights img {
+    #spotlights img, #album img {
         width: 600px;
         margin: 2rem 0rem 2rem 2rem;
     }

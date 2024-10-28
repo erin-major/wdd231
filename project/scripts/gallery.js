@@ -3,12 +3,20 @@ import displayFooter from "./footer.mjs";
 const menu = document.querySelector('#menu');
 const navElement = document.querySelector('#animation');
 const gallery = document.querySelector('#album');
+const photographerDialog = document.querySelector('#photographer-info');
+const imageTitle = document.querySelector('#photographer-info h3');
+const photographer = document.querySelector('#photographer');
+const closeButton = document.querySelector('#photographer-info button');
 
 let galleryUrl = "data/gallery.json"
 
 menu.addEventListener('click', () => {
     menu.classList.toggle("open");
     navElement.classList.toggle("open");
+});
+
+closeButton.addEventListener('click', () => {
+    photographerDialog.close()    
 });
 
 async function getGalleryImages(url) {    
@@ -34,29 +42,22 @@ function displayGallery(images) {
     images.forEach((image) => {
         let card = document.createElement('section');
         let picture = document.createElement('img');
-        // let name = document.createElement('span');
-        // let address = document.createElement('span');
-        // let phone = document.createElement('span');
-        // let website = document.createElement('a');
 
         picture.setAttribute('src', image.url);
-        // picture.setAttribute('alt', `Icon for ${member.name}`);
-        // picture.setAttribute('loading', 'lazy');       
-        // name.textContent = member.name;
-        // address.textContent = member.address;
-        // phone.textContent = member.number;
-        // website.setAttribute('href', member.website);
-        // website.textContent = member.website;
+        picture.setAttribute('alt', image.alt);
+        picture.setAttribute('loading', 'lazy');
 
         card.appendChild(picture);
-        // card.appendChild(name);
-        // card.appendChild(address);
-        // card.appendChild(phone);
-        // card.appendChild(website);
-
         gallery.appendChild(card);
+        picture.addEventListener('click', () => showAuthor(image)); 
     });    
 }
+
+function showAuthor(image) {
+    imageTitle.innerHTML = image.title;   
+    photographer.innerHTML = `<strong>Photo By:</strong> ${image.photographer}`
+    photographerDialog.showModal();
+};
 
 (async () => {
     await getGalleryImages(galleryUrl);
