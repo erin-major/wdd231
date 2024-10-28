@@ -167,8 +167,7 @@ main h2 {
 #album {
     margin-top: 2rem;
     flex-wrap: wrap;
-    justify-content: space-around;
-    min-height: 5300px;
+    justify-content: space-around;    
 }
 
 #spotlights img, #album img {
