@@ -77,7 +77,7 @@ ul.menuLinks li a {
 }
 
 nav ul.menuLinks li.active a {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, .3);
 }
 
 ul.menuLinks {
