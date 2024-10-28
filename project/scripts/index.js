@@ -88,7 +88,6 @@ async function getGalleryImages(url) {
     }
 };
 
-
 function displayViewingChance() {
 
     if (auroraPercent < 30)
@@ -106,32 +105,57 @@ function displayViewingChance() {
 function displayGallery(images) {
     spotlights.innerHTML = '';
 
+    for (let i = images.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1)); 
+        [images[i], images[j]] = [images[j], images[i]];
+    }
+    
+    images.length = 4;
+
     images.forEach((image) => {
         let card = document.createElement('section');
-        let picture = document.createElement('img');
-        // let name = document.createElement('span');
-        // let address = document.createElement('span');
-        // let phone = document.createElement('span');
-        // let website = document.createElement('a');
+        let picture = document.createElement('img');        
 
         picture.setAttribute('src', image.url);
         // picture.setAttribute('alt', `Icon for ${member.name}`);
-        // picture.setAttribute('loading', 'lazy');       
-        // name.textContent = member.name;
-        // address.textContent = member.address;
-        // phone.textContent = member.number;
-        // website.setAttribute('href', member.website);
-        // website.textContent = member.website;
-
+        picture.setAttribute('loading', 'lazy');       
+        
         card.appendChild(picture);
-        // card.appendChild(name);
-        // card.appendChild(address);
-        // card.appendChild(phone);
-        // card.appendChild(website);
 
         spotlights.appendChild(card);
     });    
-}
+};
+
+
+// function displayGallery(images) {
+//     spotlights.innerHTML = '';
+
+//     images.forEach((image) => {
+//         let card = document.createElement('section');
+//         let picture = document.createElement('img');
+//         // let name = document.createElement('span');
+//         // let address = document.createElement('span');
+//         // let phone = document.createElement('span');
+//         // let website = document.createElement('a');
+
+//         picture.setAttribute('src', image.url);
+//         // picture.setAttribute('alt', `Icon for ${member.name}`);
+//         // picture.setAttribute('loading', 'lazy');       
+//         // name.textContent = member.name;
+//         // address.textContent = member.address;
+//         // phone.textContent = member.number;
+//         // website.setAttribute('href', member.website);
+//         // website.textContent = member.website;
+
+//         card.appendChild(picture);
+//         // card.appendChild(name);
+//         // card.appendChild(address);
+//         // card.appendChild(phone);
+//         // card.appendChild(website);
+
+//         spotlights.appendChild(card);
+//     });    
+// }
 
 (async () => {
     await getIpAddress(ipUrl);
