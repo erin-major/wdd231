@@ -31,6 +31,10 @@
     #spotlights {
         min-height: 870px;
     }
+
+    #join-form {
+        min-height: 1020px;
+    }
 }
 
 @media screen and (min-width: 850px) {

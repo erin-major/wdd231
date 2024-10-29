@@ -125,7 +125,7 @@ footer p {
     padding: .5rem;
 }
 
-footer a:visited {
+footer a, footer a:visited {
     color: var(--font-color);
 }
 
@@ -223,6 +223,7 @@ main h2, h3 {
 #join-form {
     display: block;
     font-size: 1.3rem;
+    min-height: 1180px;
 }
 
 #join-form input[type=text], form input[type=email], form input[type=tel] {
