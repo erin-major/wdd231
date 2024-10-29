@@ -125,8 +125,13 @@ footer p {
     padding: .5rem;
 }
 
+footer a:visited {
+    color: var(--font-color);
+}
+
 main {
     font-family: var(--paragraph-font);
+    color: var(--font-color);
     padding: 2rem;
     display: grid;    
 }
@@ -138,7 +143,7 @@ main p {
     min-height: 40px;
 }
 
-main h2, #join-form h3 {
+main h2, h3 {
     font-size: 2.5rem;
     border-bottom: 5px solid var(--accent1-color);
 }
@@ -191,6 +196,10 @@ main h2, #join-form h3 {
     max-width: 85%;    
 }
 
+#photographer-info p {
+    margin-bottom: 5rem;
+}
+
 #photographer-info button {
     border: none;
     background: none;
@@ -218,10 +227,9 @@ main h2, #join-form h3 {
 
 #join-form input[type=text], form input[type=email], form input[type=tel] {
     display: block;
-    margin: .5rem 0rem 1.5rem 0rem;
+    margin: .5rem 0rem 1.5rem 1rem;
     padding: .8rem;
-    width: 95%;    
-    color: var(--font-color);
+    width: 95%;
     border-radius: 5px;
     border-color: var(--accent1-color);
 }

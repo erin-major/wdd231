@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aurora Explorers</title>
-    <meta name="description" content="The home page for the Aurora Explorers group.">
+    <title>Aurora Explorers Thank You</title>
+    <meta name="description" content="A thank you page for applying to join the Aurora Explorers group.">
     <meta name="author" content="Erin Major">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-large.css">
-    <script src="scripts/index.js" type="module"></script>   
-    <meta property="og:title" content="Aurora Explorers">
+    <script src="scripts/thankyou.js" type="module"></script>   
+    <meta property="og:title" content="Aurora Explorers Thank You">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://erin-major.github.io/wdd231/project/images/aurora-borealis.jpg">
     <meta property="og:url" content="https://erin-major.github.io/wdd231/chamber/index.html">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:description" content="The home page for the Aurora Explorers group.">
-    <meta property="og:site_name" content="Aurora Explorers">
+    <meta property="og:description" content="A thank you page for applying to join the Aurora Explorers group.">
+    <meta property="og:site_name" content="Aurora Explorers Thank You">
     <meta name="twitter:image:alt" content="Green and pink aurora borealis over snow covered mountains. A lake reflects the aurora borealis and is surrounded by snow.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,27 +29,21 @@
         <picture>
             <source srcset="images/aurora-borealis.webp" media="(min-width: 40rem)">
             <img src="images/aurora-borealis-small.webp"             
-            alt="Green and pink aurora borealis over snow covered mountains.">
+            alt="Green and pink aurora borealis over snow covered mountains." loading="lazy">
         </picture>        
         <button id="menu" title="menu"></button>
     </header>
     <nav id="animation">
         <ul class="menuLinks">
-            <li class="active"><a href="index.html">Home</a></li>            
-            <li><a href="join.html">Join</a></li>
+            <li><a href="index.html">Home</a></li>            
+            <li class="active"><a href="join.html">Join</a></li>
             <li><a href="gallery.html">Gallery</a></li>            
         </ul>
     </nav>
     <main>
-        <div id="information">
-            <h2>Welcome to Aurora Explorers!</h2>
-            <p>Join us on an exciting journey as we explore the wonders of nature, adventure, and discovery. Whether you're an avid adventurer or just looking to learn more about the world around you, Aurora Explorers is the perfect community for you. Discover how to sign up for our groups and participate in thrilling activities. Dive into our resources and explore our gallery. Together, let's uncover the beauty of our planet!</p>
-            <h2>What are aurora borealis?</h2>
-            <p>The Aurora Borealis, commonly known as the Northern Lights, is a breathtaking natural light display predominantly seen in high-latitude regions around the Arctic. This stunning phenomenon occurs when charged particles from the sun collide with Earth's atmosphere, creating vibrant colors that dance across the night sky. Ranging from greens and pinks to purples and reds, the auroras are not only a visual spectacle but also a reminder of the Earth's dynamic relationship with the cosmos. Witnessing the Aurora Borealis is a captivating experience that draws explorers and nature enthusiasts alike.</p>
-            <h2>Can I view aurora near me?</h2>
-            <p id="viewing-chance"></p>
-        </div>
-        <div id="spotlights"></div>
+        <div class="thank-you">
+            <p>Thank you for applying to join Aurora Explorers! We’re excited to have you on board and can’t wait to share our adventures with you. Keep an eye on your email for a confirmation message and next steps. Whether you're here to explore, learn, or connect, we're thrilled to have you with us. Welcome to the journey!</p>
+            <div id="submitInfo"></div>
     </main>
     <footer>
         <p>Find us on social media!</p>
@@ -71,7 +65,5 @@
             <br><a href="references.html">References</a>
         </div>
     </footer>
-
-    
 </body>
 </html>
