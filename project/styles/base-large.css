@@ -35,6 +35,10 @@
     #join-form {
         min-height: 1020px;
     }
+
+    #thank-you {
+        min-height: 460px;
+    }
 }
 
 @media screen and (min-width: 850px) {

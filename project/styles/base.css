@@ -283,6 +283,10 @@ form input[type=submit]:hover {
     cursor: pointer;
 }
 
+#thank-you {
+    min-height: 820px;
+}
+
 @keyframes slideInFromRight {
     0% {
       transform: translateX(100%); 
