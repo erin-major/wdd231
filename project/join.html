@@ -42,7 +42,25 @@
     </nav>
     <main>
         <h2>Join now!</h2>
-        <p>Ready to embark on new adventures? Signing up with Aurora Explorers is easy! Follow our step-by-step guide to join a group and start exploring with like-minded adventurers. Whether you're a seasoned explorer or just starting out, we’re here to make your journey unforgettable. Let’s get you on board!</p>
+        <p>Ready to embark on new adventures? Signing up with Aurora Explorers is easy! Fill out the form below to join and start exploring with like-minded adventurers. Whether you're a seasoned explorer or just starting out, we’re here to make your journey unforgettable. Let’s get you on board!</p>
+        <form id="join-form" method="GET" action="thankyou.html">
+            <h3>Membership Application Form</h3>
+            <label><strong>First Name</strong><input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+            <label><strong>Last Name</strong><input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+            <label><strong>Email Address</strong><input type="email" name="email" required autocomplete="email" title="Your Email Address" placeholder="example@domain.com"></label>
+            <label><strong>Mobile Phone Number</strong><input type="tel" name="phone" required autocomplete="tel" title="Your Mobile Phone Number"></label>
+            <div id="checkboxes">I am interested in:<br><br>
+                <label><input type="checkbox" name="gallery" value="yes">Contributing to the gallery</label><br>
+                <label><input type="checkbox" name="notifications" value="yes">Getting notifications for aurora sightings</label><br>
+                <label><input type="checkbox" name="meetups" value="yes">Joining local Aurora Explorer meetups</label><br>
+                <label><input type="checkbox" name="meetups" value="yes">Receiving the monthly newsletter</label><br>
+                <label><input type="checkbox" name="meetups" value="yes">Applying to be a member of the board</label><br>
+            </div>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Submit Application for Review">
+            
+        </form>
+    
     </main>
     <footer>
         <p>Find us on social media!</p>

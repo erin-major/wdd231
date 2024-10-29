@@ -134,11 +134,11 @@ main {
 main p {
     font-size: 1.5rem;
     line-height: 2.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     min-height: 40px;
 }
 
-main h2 {
+main h2, #join-form h3 {
     font-size: 2.5rem;
     border-bottom: 5px solid var(--accent1-color);
 }
@@ -207,14 +207,71 @@ main h2 {
     color: var(--accent2-color);
 }
 
-
-#photographer-info h3 {
-    font-family: var(--heading-font);    
-    font-size: 2rem;
-}
-
 ::backdrop {
     background-color: rgba(0, 0, 0, 0.6);    
+}
+
+#join-form {
+    display: block;
+    font-size: 1.3rem;
+}
+
+#join-form input[type=text], form input[type=email], form input[type=tel] {
+    display: block;
+    margin: .5rem 0rem 1.5rem 0rem;
+    padding: .8rem;
+    width: 95%;    
+    color: var(--font-color);
+    border-radius: 5px;
+    border-color: var(--accent1-color);
+}
+
+#checkboxes {    
+    border: 1px solid var(--accent1-color);
+    padding: 1rem;
+    margin: 2rem 0rem;
+    border-radius: 5px;
+    width: 95%;
+}
+
+#checkboxes label {
+    display: flex;
+    align-items: center;    
+}
+
+#join-form input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+    accent-color: var(--accent1-color);
+}
+
+#join-form input:required {
+    border-bottom-width: 5px;
+    border-bottom-color: var(--accent2-color);
+}
+
+#join-form input:required:focus {
+    border-bottom-width: 5px;
+    border-bottom-color: var(--primary-color);    
+}
+
+#join-form input:required:valid {
+    border-bottom-width: 5px;
+    border-bottom-color: var(--primary-color);
+}
+
+form input[type=submit] {
+    padding: .8rem;    
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid var(--accent1-color);
+    background-color: var(--accent1-color);
+}
+
+form input[type=submit]:hover {
+    box-shadow: 0 0 10px 1px var(--accent2-color);
+    cursor: pointer;
 }
 
 @keyframes slideInFromRight {
