@@ -4,6 +4,7 @@ const menu = document.querySelector('#menu');
 const navElement = document.querySelector('#animation');
 const viewingChance = document.querySelector('#viewing-chance');
 const spotlights = document.querySelector('#spotlights')
+const visitMessage = document.querySelector('#visits');
 
 const ipUrl = "https://api.aruljohn.com/ip/json";
 let ipAddress = null;
@@ -126,6 +127,39 @@ function displayGallery(images) {
     });    
 };
 
+function updateVisit() {
+    const lastVisit = localStorage.getItem('lastVisit');
+    const millisecondsInADay = 24 * 60 * 60 * 1000;
+    let today = Date.now();   
+     
+    if (lastVisit == null) {        
+        visitMessage.innerHTML = `Welcome to Aurora Explorers! Discover the wonders of nature and join our community. Start your journey today!`;
+    }
+
+    else {
+        let timeSinceLastVisit = today - parseInt(lastVisit);
+
+        if (timeSinceLastVisit < millisecondsInADay) {
+            
+            visitMessage.innerHTML = `Welcome back to Aurora Explorers! We're glad to see you again. Dive right in and continue your journey with us!`;
+        }
+
+        else {
+            let diffDays = Math.round(timeSinceLastVisit / millisecondsInADay);
+            
+            if (diffDays === 1) {
+                visitMessage.innerHTML = `It's been ${diffDays} day since your last visit. We're excited to have you back! Explore what's new and continue your adventure with us!`;
+            }
+
+            else {
+                visitMessage.innerHTML = `It's been ${diffDays} days since your last visit. We're excited to have you back! Explore what's new and continue your adventure with us!`;
+            }
+        }
+    }
+
+    localStorage.setItem('lastVisit', today);
+};
+
 (async () => {
     await getIpAddress(ipUrl);
     await getLocation(locationUrl);
@@ -136,4 +170,5 @@ function displayGallery(images) {
     await getGalleryImages(galleryUrl);
 })();
 
+updateVisit();
 displayFooter();
